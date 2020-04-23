@@ -1,0 +1,5 @@
+# script para alto contraste em linguagem html
+# acessbilidade no site 
+
+<body style="background-color: white">
+	<a href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto contraste [Alt + 3]</a>
