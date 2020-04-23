@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=tHYxjJxtJko&list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-&index=4
+
 a = input ('Digite algo: ')
 print ('O tipo primitivo desse valor', type(a)) 
 print('Só tem espaços? ', a.isspace())
