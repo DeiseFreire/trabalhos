@@ -18,7 +18,7 @@ Grupo de escolhas da pergunta
 [   ] acabou = ( total == 11 ) 
 
 Pergunta 2 
-0,2 pts 
+
 No nosso jogo da forca imagine que você inicialize a variável erros com 6 tentativas:
 erros = 6
 O que você precisa mudar no código para manter o jogador sendo enforcado após 6 tentativas frustradas (para o jogo funcionar da forma correta)?
