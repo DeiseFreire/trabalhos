@@ -1,0 +1,70 @@
+Pergunta 1 
+ 
+Carlos criou um loop para calcular a quantidade de caracteres em uma palavra através do seguinte código:
+total = 0
+palavra = "python rocks!"
+acabou = False
+while (not acabou):
+    #AQUI 
+    total = total + 1
+print(total - 1)
+O que Carlos precisa colocar dentro do while no lugar de #AQUI para que se encerre e consiga imprimir o total de caracteres da palavra?
+Grupo de escolhas da pergunta 
+ 
+[ x ] acabou = ( total == len(palavra) ) 
+ 
+[   ] acabou = True 
+ 
+[   ] acabou = ( total == 11 ) 
+
+Pergunta 2 
+0,2 pts 
+No nosso jogo da forca imagine que você inicialize a variável erros com 6 tentativas:
+erros = 6
+O que você precisa mudar no código para manter o jogador sendo enforcado após 6 tentativas frustradas (para o jogo funcionar da forma correta)?
+Grupo de escolhas da pergunta 
+ 
+[ x ] Apenas mudar o teste da variável encerrou para:
+encerrou =  erros == 12
+ 
+[   ] Apenas decrementar a variável erros com:
+erros = erros - 1
+ 
+[   ] Decrementar a variável erros com:
+erros = erros - 1
+e mudar o teste da variável encerrou para:
+encerrou = erros == 0
+ 
+Nada. 
+
+Pergunta 3 
+
+Suponha que tenhamos uma lista com os seguintes inteiros:
+inteiros = [1,3,4,5,7,8]
+Podemos preencher uma nova lista com o quadrado de cada número da lista anterior, através do recurso List Comprehension. Considerando que, para calcular o quadrado de um número, fazemos x*x, qual seria o código para obter a lista de quadrados?
+Grupo de escolhas da pergunta 
+ 
+[   ] quadrados = [2 for n in inteiros] 
+
+[ x ] quadrados = [n*n for n in inteiros] 
+ 
+[   ] Não é possível inicializar uma lista de números inteiros, apenas caracteres. 
+
+Pergunta 4 
+ 
+Considere o seguinte trecho de código com um loop:
+passos = 0
+while (#######):
+  passos += 1
+print(passos)
+O que precisa ser colocado na condição do while para que o loop saia após 10 passos?
+Selecione duas alternativas.
+Grupo de escolhas da pergunta 
+ 
+[ x ] passos==10 
+ 
+[   ] passos<=10 
+ 
+[   ] passos<10 
+ 
+[   ] passos<=9 
