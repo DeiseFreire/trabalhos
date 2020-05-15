@@ -1,0 +1,117 @@
+1.6 - Quiz - Módulo 1 
+
+Pergunta 1 
+
+Sabendo que o Python usa uma tipagem dinâmica, qual alternativa abaixo é correta? 
+[   ]  Python permite declaração estática/explícita de variáveis. 
+
+
+[   ]  Uma variável passa a existir ao ser declarada, sem necessariamente termos atribuído um valor para ela, nem o tipo. 
+
+
+[ x ]  Uma variável só passa a existir quando atribuímos um valor. 
+
+Não há declaração de variáveis estáticas em Python, como em linguagens como C, Java ou C#. Nessas linguagens, indicamos o tipo e o nome das variáveis e ela já passa a existir.
+Por exemplo:
+int idade;
+Repare que só declaramos o tipo e o nome da variável, sem ter atribuído o valor.
+Em Python, a variável só passa a existir quando atribuímos um valor, como no exemplo abaixo:
+idade = 12
+Isso faz todo sentido, já que não temos uma declaração explícita do tipo, como na linguagem Java ou C#. O interpretador do Python não tem como assumir um tipo.
+
+ 
+Pergunta 2 
+
+Temos a seguinte variável, que representa o preço de um produto:
+preco = 49.90
+Qual será o tipo da variável preco? Faça o teste!
+[ x ]  float 
+
+
+[   ]  decimal 
+
+
+[   ]  double 
+
+
+[   ]  int 
+
+O valor 49.99, é um número decimal, ou seja, com um ponto flutuante, por isso em Python o seu tipo será o float. Podemos verificar isso no console do Python:
+>>> preco = 49.99
+>>> type(preco)
+<class 'float'>
+
+
+Pergunta 3 
+
+Para representar uma data, temos as variáveis dia, mes e ano:
+>>> dia = 15
+>>> mes = 10
+>>> ano = 2015
+Sem alterar as variáveis e sem passar nenhuma string adicional à função print(), como faríamos para ter como resultado a impressão, de uma data formatada:
+15/10/2015
+Sua Resposta: 
+dia = 15
+mes =  10
+ano = 2015
+print(dia, mes, ano, sep="/")
+
+Podemos alterar o separador entre os valores que a função print()recebe, utilizando o parâmetro sep, que por padrão é um espaço em branco. Basta utilizá-lo, dizendo que seu valor será uma barra (/):
+>>> dia = 15
+>>> mes = 10
+>>> ano = 2015
+>>> print(dia, mes, ano, sep="/")
+15/10/2015
+
+
+Pergunta 4 
+
+Veja o código a seguir:
+>>> subst = "Python"
+>>> verbo = "é"
+>>> adjetivo = "fantástico"
+>>> print(subst, verbo, adjetivo, sep="_", end="!\n")
+Qual será a saída do comando print?
+[   ]   Python_é_fantástico 
+
+
+[ x ]   Python_é_fantástico! 
+
+
+[   ]   Python!é!fantástico_ 
+
+
+[   ]   Python é fantástico! 
+
+
+Repare que usamos o parâmetro sep="_" para definir um _ entre cada valor, por isso é impresso:
+Python_é_fantástico
+Além disso, definimos através do end para imprimir uma exclamação (!), seguida pelo \n:
+end="!\n"
+Lembrando que o \n é um caractere especial, que faz com que o novo prompt comece em uma nova linha.
+Com isso recebemos a saída:
+Python_é_fantástico!
+>>>
+
+Pergunta 5 
+
+Qual é a função utilizada para imprimir algo na tela? 
+  [   ] println() 
+
+
+  [   ] puts() 
+
+
+  [   ] printf() 
+
+
+  [ x ] print() 
+
+
+A função é a print(). Basta passar a mensagem por parâmetro para a função, que a mensagem será impressa.
+
+
+
+
+
+
