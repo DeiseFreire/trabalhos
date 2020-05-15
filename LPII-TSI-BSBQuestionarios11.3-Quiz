@@ -48,7 +48,6 @@ Qual dos códigos abaixo retorna o melhor preço até agora, para que o Douglas 
 [   ]  print(min precos) 
 
 
-
 Se desejamos descobrir o menor item de uma Lista, podemos utilizar a função min(), e passar a lista para ela como parâmetro. Então no caso do Douglas, para descobrir o menor preço do celular até hoje, faríamos assim:
 print( min(precos))
 E teríamos como resposta 1015, ou seja a promoção de R$ 1025 não valeria a pena!
