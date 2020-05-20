@@ -25,7 +25,7 @@ while (not acertou and not enforcou):
     chute = input("Qual letra? ")
     chute = chute.strip()
 
-    if (chute in palavra_secreta): # Verifica se o usuário errou a palavra para incrementar a variável 
+    if (chute in palavra_secreta): # Verifica se o usuário errou alguma palavra para incrementar a variável 
         index = 0
         for letra in palavra_secreta: # Verifica se o chute está na palavra
             if (chute.upper() == letra.upper()):
