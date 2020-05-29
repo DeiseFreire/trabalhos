@@ -1,0 +1,84 @@
+Pergunta 1 
+
+Marque todas as alternativas abaixo que são modificadores de acesso da função open(): 
+[ ]  w+r 
+[x]  r 
+[x]  a 
+[x]  w 
+
+Pergunta 2 
+
+É uma boa prática fecharmos o arquivo depois de utilizá-lo para escrita ou leitura, assim outros programas ou processos podem ter acesso ao arquivo e ele não fica preso apenas ao nosso script Python.
+Qual das funções abaixo é utilizada para fechar um arquivo que foi aberto desse jeito:
+arquivo = open('nome.txt', 'w')
+[ ]  arquivo.flush() 
+[ ]  arquivo.end() 
+[ ]  arquivo.clear() 
+[x]  arquivo.close() 
+
+Pergunta 3 
+
+Dado um arquivo como o seguinte: frutas.txt
+Banana
+Maçã
+Pera
+Uva
+Jamelão
+Que foi aberto deste modo:
+arquivo = open('frutas.txt','r')
+E quando executamos os comandos:
+linha = arquivo.readline()
+print(linha)
+linha = arquivo.readline()
+print(linha)
+É exibido corretamente as linhas:
+Banana
+Maçã
+Mas quando abrirmos o arquivo e usarmos os comandos:
+arquivo = open('frutas.txt','r')
+conteudo = arquivo.read()
+print(conteudo)
+conteudo = arquivo.read()
+print(conteudo)
+A primeira vez é exibida corretamente o conteudo, porém na segunda não é exibido nada. Porque?
+
+[ ] Se desejamos ler duas vezes o arquivo inteiro, temos que utilizar o modificador de acesso r+. O modificador de acesso r perde o efeito de leitura após a função read ser executada pela primeira vez. 
+
+[x]  Pois o comando read() lê o arquivo inteiro de uma vez, colocando o ponteiro de leitura no final do mesmo. Se chamarmos a função read() novamente, como o ponteiro de leitura está no final, nada será lido. 
+
+[ ]  Pois como abrimos o comando com o modificador de acesso r, fica implícito que só tentaremos ler uma vez com a função read(), quando tentamos pela segunda vez obtemos um erro e a leitura é abortada. 
+
+Correto, se desejarmos ler o arquivo novamente, devemos fechá-lo com o comando .close(), reabri-lo com o comando .open() e ai sim conseguiremos lê-lo por inteiro novamente.
+
+Pergunta 4 
+
+Se desejamos trabalhar com arquivos, precisamos primeiro abrí-lo utilizando a função open(). A função open() recebe um ou mais parâmetros, em uma determinada ordem quais são eles? 
+[ ] O modificador de acesso primário e o modificador de acesso secundário. 
+[ ] O modificador de acesso e o nome de arquivo. 
+[x] O nome do arquivo e o modificador de acesso. 
+
+Importante é que não precisamos passar o modificador de acesso, pois o segundo parâmetro é opcional:
+arquivo = open("entrada.txt")
+Nesse caso será utilizado o modo de leitura (r) por padrão.
+
+Pergunta 5 
+
+Dado o arquivo abaixo chamado de pessoas.txt, onde estão separados os nomes e a idade de um grupo de pessoas:
+Romário 37
+Junior 32
+Daniel 28
+Izzy 38
+Se queremos ler apenas a primeira linha do arquivo, quais comandos abaixo realizam este feito?
+ 
+[ ] arquivo = open('pessoas.txt', 'r')
+   linha = arquivo.read()
+   print(linha)
+ 
+[x] arquivo = open('pessoas.txt', 'r')
+    linha = arquivo.readline()
+    print(linha)
+  
+[ ] arquivo = open('pessoas.txt', 'r')
+    linha = arquivo.firstline()
+    print(linha)
+Se desejamos ler linha a linha de nosso arquivo, podemos utilizar a função readline(). Ela nos retorna uma linha por vez, e faz com que a nossa leitura seja feita de modo mais controlado. Também existe a função read() que por sua vez lê o arquivo inteiro.
