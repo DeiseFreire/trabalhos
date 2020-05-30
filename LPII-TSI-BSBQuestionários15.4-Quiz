@@ -1,0 +1,60 @@
+Pergunta 1 
+
+Entre as boas práticas de código, está a divisão do código de uma função grande em funções pequenas. Pensando nisso, todas as afirmativas abaixo são verdadeiras, exceto uma. Qual? 
+Grupo de escolhas da pergunta 
+ 
+O código fica mais fácil de testar, pois com diversas pequenas funções, é muito mais fácil testá-las individualmente em busca de erros. 
+ 
+A legibilidade do código fica prejudicada, visto que temos de ler diversas funções, em vez de apenas uma. 
+ 
+Dividindo o código de uma função grande em funções pequenas, evitamos o problema das múltiplas responsabilidades em única grande função, afinal uma função só deve ter uma única responsabilidade. 
+ 
+Melhora a manutenção do código, já que é mais fácil você cuidar de vários pequenos blocos simples do que um grande bloco complexo.
+
+Pergunta 2 
+ 
+Douglas está criando uma calculadora simples, para realizar cálculos entre dois números. Para isso, ele criou quatro funções, uma para cada operação matemática (soma, subtração, multiplicação e divisão):
+def soma_dois_numeros(primeiro_numero, segundo_numero):
+    print(primeiro_numero + segundo_numero)
+
+def subtrai_dois_numeros{primeiro_numero, segundo_numero}
+    print(primeiro_numero - segundo_numero)
+
+def multiplica_dois_numeros(primeiro_numero, segundo_numero):
+    print(primeiro_numero * segundo_numero)
+
+def divide_dois_numeros(primeiro_numero, segundo_numero):
+    print(primeiro_numero / segundo_numero)
+Mas na hora de testá-las, Douglas reparou algo estranho no funcionamento da sua calculadora. Então, das quatro funções declaradas acima, podemos dizer que:
+Grupo de escolhas da pergunta 
+ 
+[ ] A função multiplica_dois_numeros possui erro de sintaxe. 
+ 
+[ ] A função soma_dois_numeros possui erro de sintaxe. 
+ 
+[ ] A função divide_dois_numeros possui erro de sintaxe. 
+ 
+[x] A função subtrai_dois_numeros possui erro de sintaxe. 
+ 
+Pergunta 3 
+
+Sobre funções em Python, temos as seguintes afirmativas:
+1 - Uma função é um bloco de código que pode ser guardado, para ser chamado assim que desejarmos, contanto que saibamos seu nome. Contudo, não é necessário sabermos a sua implementação.
+2 - A seguinte declaração de função é válida:
+# declara a função
+def imprime_mensagem():
+    print("Olá")
+
+# chama a função
+imprime_mensagem()
+3 - A convenção é criarmos funções no padrão lowerCamelCase, isto é, a primeira palavra é escrita com todas as letras minúsculas, as palavras restantes com a primeira letra maiúscula e unidas sem espaço.
+Sobre as afirmativas anteriores, podemos afirmar que:
+Grupo de escolhas da pergunta 
+ 
+[ ] Apenas a alternativa 2 é falsa. 
+ 
+[x] Nenhuma alternativa é falsa. 
+ 
+[ ] Apenas a alternativa 3 é falsa. 
+ 
+[ ] Apenas a alternativa 1 é falsa. 
