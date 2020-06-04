@@ -64,7 +64,7 @@ var8.set("0")
 var9.set("0")
 # CRIANDO OS RADIO BUTTONS PARA O CAFE
 Latta = Checkbutton(framef1ab, text = "Latta \t", variable = var1, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold')).grid(row=0,column=0)
-Latta = Checkbutton(ramef1ab, text = "Latta \t", variable = var2, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold')).grid(row=0,column=0)
+Latta = Checkbutton(framef1ab, text = "Latta \t", variable = var2, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold')).grid(row=0,column=0)
 Latta = Checkbutton(framef1ab, text = "Latta \t", variable = var3, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold')).grid(row=0,column=0)
 Latta = Checkbutton(framef1ab, text = "Latta \t", variable = var4, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold')).grid(row=0,column=0)
 Latta = Checkbutton(framef1ab, text = "Latta \t", variable = var5, onvalue = 1, offvalue = 0, font=('arial', 18, 'bold')).grid(row=0,column=0)
