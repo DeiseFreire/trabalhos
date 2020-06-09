@@ -1,3 +1,4 @@
+# Exercício Python #007 - Média Aritmética
 # https://www.youtube.com/watch?v=_QfISzy0IKs
 
 n1 = float(input('Primeira nota do aluno: '))   
