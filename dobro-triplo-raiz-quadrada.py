@@ -1,3 +1,4 @@
+# Exercício Python #006 - Dobro, Triplo, Raiz Quadrada
 # https://www.youtube.com/watch?v=mqcNw_dhl8I&list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-&index=7
 
 n = int(input('Digite um número: ')
