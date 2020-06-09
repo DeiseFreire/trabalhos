@@ -1,3 +1,4 @@
+# Exercício Python #003 - Somando dois números
 # https://www.youtube.com/watch?v=PB254Cfjlyk&list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-&index=3
 
 n1 = int (input ('Digite um valor: '))
