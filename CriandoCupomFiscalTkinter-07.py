@@ -133,14 +133,11 @@ txtLatte.grid(row=8,column=1)
 #CAMPO DO RECIBO
 lblRecibo = Label=(frameft2, font=('arial', 12, 'bold'), text="Recibo do Cliente :", bd=2,anchor='W') 
 lblRecibo.grid(row=0,column=0,sticky=W)
-
 lblRecibo = Text=(frameft2, width=59, height=28, bg"white", bd3, font=('arial', 10)) 
 textRecibo.grid(row=1, column=0) 
-
 # CAMPOS DOS BOTÕES
 cmdTotal=Button(framefb2,padx=16,pady=1,bd=4,f'black',font=('arial',16,'bold'),width=5,text='Total').grid(row=0,column=0)   
 cmdRecibo=Button(framefb2,padx=16,pady=1,bd=4,f'black',font=('arial',16,'bold'),width=5,text='Total').grid(row=0,column=1) 
 cmdLimpar=Button(framefb2,padx=16,pady=1,bd=4,f'black',font=('arial',16,'bold'),width=5,text='Total').grid(row=0,column=2)
 cmdSair=Button(framefb2,padx=16,pady=1,bd=4,f'black',font=('arial',16,'bold'),width=5,text='Total').grid(row=0,column=3)   
-
 root.mainloop() 
