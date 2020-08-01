@@ -1,0 +1,110 @@
+Recursividade
+
+1. O que é um método recursivo?
+RESPOSTA: 
+          Seria quebrar um problema em subproblemas menores e menores até chegar a um problema pequeno o suficiente para que ele possa ser resolvido de forma fácil. 
+ 
+2. Qual a saída do seguinte programa? Desenhe um diagrama da pilha que mostre o estado do programa quando exibir o resultado.
+RESPOSTA:
+def recurse(n, s):
+  if n == 0:
+    print(s)
+  else:
+    recurse(n-1, n+s)
+recurse(3, 0)
+__a Principal__:
+    Nenhum
+recurso:
+    n -> 3
+    s -> 0
+recurso:
+    n -> 2
+    s -> 3
+recurso:
+    n -> 1
+    s -> 5
+recurso:
+    n -> 0
+    s -> 6
+
+2.1. O que aconteceria se você chamasse esta função desta forma: recurse(-1, 0)?
+RESPOSTA:
+          Haveria um loop infinito, porque o parâmetro n nunca seria zero.
+
+2.2. Escreva uma docstring que explique tudo o que alguém precisaria saber para usar esta função (e mais nada).
+RESPOSTA:
+
+Docstring toda a vez que começamos um módulo, uma função no Python podemos definir uma string inicial que vai servir como documentação daquele bloco então, por exemplo, 
+eu poderia colocar aqui uma explicação "Módulo que contém operações matemáticas"
+"Módulo que contém operações Matemáticas"
+def soma(parcela, parcela_2):
+return parcela + parcela_2
+if __name__=='__main__':
+#Testando a função soma
+print(soma(1, 2)) # imprimindo
+uma vez que definimos essa string ela passa a ser acessível por aquela função no console. No help, se vamos importar o módulo math, então lembrando, from matemática podemos 
+inclusive utilizar o ctrl + espaço do pyCharm para nos ajudar no auto complete [from matematica.base import math]. Quando pergunto: Help do math. Veja que ele me coloca qual 
+é o nome do módulo e a mensagem: matematica.base.mat - "Módulo que contém operações Matemáticas" justamente o docstring.  
+"Módulo que contém operações Matemáticas"
+def soma(parcela, parcela_2):
+return parcela + parcela_2
+if __name__=='__main__':
+#Testando a função soma
+print(soma(1, 2)) # imprimindo
+Se eu crio uma string só que utilizando as três aspas no PyCharm e aperto o Enter ele já me coloca um template da documentação. 
+ 
+3. A definição da função fatorial, denotada pelo símbolo !, pode ser definida como:
+0! = 1
+n! = n(n - 1)!
+Esta definição diz que o fatorial de 0 é 1, e o fatorial de qualquer outro valor, n, én multiplicado pelo fatorial de n-1.
+Então 3! é 3 vezes 2!, que é 2 vezes 1!, que é 1 vez 0!. Juntando tudo, 3! é igual a 3 vezes 2 vezes 1 vezes 1, que é 6.
+
+3.1. Escreva uma função recursiva que calcule o fatorial de um número inteiro n.
+RESPOSTA:
+def calcularFatorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return calcularFatorial(n - 1) * n
+
+3.2. Elabore também o diagrama da pilha para a sequência de chamadas de função para o caso 3!.
+* Teste também a sua função inserindo valores negativos e não inteiros. O que acontece? Em caso de erro, procure tratar cada situação para evitar esses erros.
+ 
+4. [Desafio] Depois do fatorial, o exemplo mais comum de uma função matemática definida recursivamente é fibonacci, que tem a seguinte definição:
+fibonacci(0) = 0
+fibonacci(1) = 1
+fibonacci(n) = fibonacci(n - 1) + fibonacci(n - 2)
+Traduza essa definição para Python, tente entender e explicar como é o seu funcionamento.
+RESPOSTA: 
+
+Solução 1:
+
+Versão recursiva:
+
+def fibo(n):
+  if n <= 1:
+    return n
+  else:
+    return fibo(n-1) + fibo(n-2)
+
+Solução 2:
+
+Versão não recursiva:
+
+def fibo(n):
+  f0 = 0
+  f1 = 1
+  for k in range(1,n+1):
+    f2 = f0 + f1
+    f0 = f1
+    f1 = f2
+  return f0
+Análise de eficiência das funções Fibonacci calculando o número de operações de soma S(n) realizadas:
+Neste caso não faz sentido utilizar a versão recursiva.
+
+Árvore de Recorrência:
+
+A solução recursiva é ineficiente, pois recalcula várias vezes a solução para valores intermediários:
+
+Por exemplo, para F(6)=fibo(6) = 8, temos 2xF(4), 3xF(3), 5xF(2).
+
