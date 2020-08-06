@@ -1,8 +1,8 @@
-13.4 - Quantas tentativas faltam? 
+#13.4 - Quantas tentativas faltam? 
 
-Sempre é importante dar feedback ao usuário quando ele realiza alguma ação no sistema. No caso da forca, quando o jogador errar uma letra, 
-queremos indicar isso, juntamente com quantas tentativas faltam. Em outras palavras queremos mostrar para o jogador quantas rodadas ele 
-ainda pode jogar antes de ser enforcado. Que código poderíamos escrever para dar esse feedback ao jogador?
+#Sempre é importante dar feedback ao usuário quando ele realiza alguma ação no sistema. No caso da forca, quando o jogador errar uma letra, 
+#queremos indicar isso, juntamente com quantas tentativas faltam. Em outras palavras queremos mostrar para o jogador quantas rodadas ele 
+#ainda pode jogar antes de ser enforcado. Que código poderíamos escrever para dar esse feedback ao jogador?
 *********************************
 ***Bem vindo ao jogo da Forca!***
 *********************************
