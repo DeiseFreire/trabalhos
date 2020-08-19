@@ -38,4 +38,6 @@ Devemos utilizar o tipo bool para representar verdadeiro (True) e falso (False),
 >>> existe = True
 >>> type(existe)
 <class 'bool'>
-Dica: Nesse tipo de perguntas, sinta-se sempre à vontade de usar a documentação do Python. Aliás, aconselhamos a usar a documentação para se acostumar. É um documento bastante técnico e menos didático, mas ajuda tirar dúvidas pontuais: https://docs.python.org/3.5/index.htmlLinks to an external site.
+Dica: Nesse tipo de perguntas, sinta-se sempre à vontade de usar a documentação do Python. Aliás, aconselhamos a usar a documentação 
+para se acostumar. É um documento bastante técnico e menos didático, mas ajuda tirar dúvidas pontuais: 
+https://docs.python.org/3.5/index.htmlLinks to an external site.
