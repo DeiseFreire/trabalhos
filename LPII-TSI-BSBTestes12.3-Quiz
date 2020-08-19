@@ -69,5 +69,5 @@ Todas as sequências abaixo são imutáveis, exceto:
 
 [ ]  str 
 [ ]  tuple 
-[x] list 
+[x]  list 
 [ ]  range 
