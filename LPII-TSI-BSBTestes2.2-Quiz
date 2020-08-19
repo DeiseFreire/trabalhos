@@ -1,0 +1,115 @@
+Pergunta 1
+0,2 / 0,2 pts
+Temos o seguinte trecho de código:
+
+nome = "Nico"
+sobrenome = "Steppat"
+print(nome + sobrenome)
+O resultado da operação é:
+
+[ ]  Não é possível concatenar as duas variáveis. 
+[ ]  NicoSteppat 
+[x]  Nico Steppat 
+A resposta correta é NicoSteppat.
+
+O caractere + aqui não tem o significado de somar e sim concatenar. Estamos concatenando (juntando) duas strings!
+
+Repare também que não há espaço entre as palavras. Para que haja, basta fazer assim:
+
+nome = "Nico"
+sobrenome = "Steppat"
+print(nome, sobrenome)
+Lembrando que a função print automaticamente aplica um separador entre os valores. O separador é um espaço por padrão, mas pode ser reconfigurado pelo parâmetro sep:
+
+nome = "Nico"
+sobrenome = "Steppat"
+print(nome, sobrenome, sep="_")
+ 
+Pergunta 2
+0,2 / 0,2 pts
+Temos o seguinte código:
+
+idade1 = 10
+idade2 = "20"
+print(idade1 + idade2)
+Qual das opções abaixo possui o resultado do código? Fique à vontade de testar esse código no console do Python.
+
+[ ]  30 
+[x]  O código não funciona! 
+[ ]  "1020" 
+O código na verdade não funciona, e exibe a seguinte mensagem de erro no console:
+
+unsupported operand type(s) for +: 'int' and 'str'
+Isso acontece porque não podemos realizar uma operação de soma envolvendo uma string. Para resolvermos o problema, podemos apelar para a função int(), que converte uma string que contém um número, em um número inteiro:
+
+idade1 = 10
+idade2 = int("20")
+print(idade1 + idade2)
+ 
+Pergunta 3
+0,1 / 0,2 pts
+Romeu fez uma simples comparação entre números, mas que não funciona. Segue o código:
+
+numero1 = 10
+numero2 = 10
+if(numero1 = numero2):
+    print("São números iguais")
+Consegue descobrir onde Romeu errou?
+
+Resposta:
+numero1 = 10
+numero2 = 10
+if(numero1 == numero2):
+print("São iguais")
+else:
+print("Não são iguais")
+
+Pergunta 4
+0,2 / 0,2 pts
+Romário, seguindo o que foi aprendendo neste curso, resolveu testar o código que compara o chute digitado pelo usuário com um número secreto definido no programa.
+
+numero_secreto = 42
+chute = input("Digite seu número")
+print("Você digitou ", chute)
+if(numero_secreto == chute):
+    print("Você acertou")
+else:
+    print("Você errou")
+Com base no código de Romário, temos as seguintes afirmativas:
+
+a) Sempre exibirá a mensagem Você errou, independentemente se o chute for igual ao número secreto
+
+b) Todo valor retornado pela função input é um número.
+
+c) É necessário converter o retorno de input para um número, no caso, um inteiro.
+
+Sobre as afirmativas anteriores, podemos dizer que:
+
+[x]  Apenas B é falsa. 
+[ ]  Apenas C é falsa. 
+[ ]  Apenas A é falsa. 
+ 
+Pergunta 5
+0,2 / 0,2 pts
+Fernanda, colocando em prática o que aprendeu neste capítulo, escreveu o seguinte código para testar se realmente aprendeu a criar uma condição if em seu código:
+
+minha_idade = 26
+idade_namorado = 25
+if(minha_idade == idade_namorado)
+    print('temos idades iguais')
+else:
+    print('temos idades diferentes')
+O problema é que o código dela não funciona. Consegue enxergar onde está o problema? Para quem está começando com Python, pode ser bem sutil. Descobriu?
+
+A sua resposta:
+falta dois ponto no final do if ():
+
+O problema é que para indicar o início do bloco if, é necessário utilizar dois pontos (:). Veja que no código que ele faltou. O código corrigido ficará assim:
+
+minha_idade = 26
+idade_namorado = 25
+if(minha_idade == idade_namorado):
+    print('temos idades iguais')
+else:
+    print('temos idades diferentes')
+Importante também é sempre usar a indentação correta. Ou seja, depois da linha com o if, devemos usar 4 espaços ou um tab para começar o novo bloco de código.
