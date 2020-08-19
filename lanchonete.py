@@ -34,10 +34,17 @@ framef2ab.pack(side=RIGHT)
 frameRODAPE = Frame(framef2a, width=211, height=190, bd=0, relief="raise")
 frameRODAPE.pack(side=BUTTON)
 # TROCANDO A COR DE FUNDO DO FRAME DA ESQUERDA
-framef1a.configure(background
-'gray')
+Tops.configure(background='gray')
+framef1.configure(background='gray')
+frame1aa.configure(background='DarkSeaGreen3')
+frame1ab.configure(background='DarkSeaGreen3')  
+frame2a.configure(background='Burlywood3')  
+frame2aa.configure(background='Burlywood3') 
+frame2ab.configure(background='Burlywood3')  
+frameRodape.configure(background='Burlywood3')  
+
 # INSERINDO O RÓTULO DO CABECALHO COM O TÍTULO
-lblInfo = Label(Tops, font=('arial', 70, 'bold'), text="SISTEMA CAFETERIA", bd=8, width=23)
+lblInfo = Label(Tops, font=('arial', 70, 'bold'), text="SISTEMA CAFETERIA", bd=6, width=24)
 lblInfo =.grid(row=0, column=0)
 # DECLARANDO AS PRIMEIRAS VARIÁVEIS
 var1 = IntVar()
