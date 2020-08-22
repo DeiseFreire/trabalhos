@@ -42,11 +42,39 @@ frame2a.configure(background='Burlywood3')
 frame2aa.configure(background='Burlywood3') 
 frame2ab.configure(background='Burlywood3')  
 frameRodape.configure(background='Burlywood3')  
-
+frameft2.configure(background='IndianRed3')
 # INSERINDO O RÓTULO DO CABECALHO COM O TÍTULO
-lblInfo = Label(Tops, font=('arial', 70, 'bold'), text="SISTEMA CAFETERIA", bd=6, width=24)
+lblInfo = Label(Tops, font=('arial', 70, 'bold'), text="SISTEMA CAFETERIA", bd=6, width=23)
 lblInfo =.grid(row=0, column=0)
+#CRIANDO O CODIGO DO BOTAO SAIR
+def iExit(): 
+root.destroy() 
+return 
 # DECLARANDO AS PRIMEIRAS VARIÁVEIS
+C_Latte=StringVar()
+C_LatteGelado=StringVar()
+C_cafegelado=StringVar()
+C_cafecreme=StringVar()
+C_cafecortado=StringVar()
+C_cappuccino=StringVar()
+C_cappuccinogelado=StringVar()
+C_cafepreto=StringVar()
+B_bolo_limao=StringVar()
+B_bolo_milho=StringVar()
+B_bolo_morando=StringVar()
+B_torta.set=StringVar()
+B_bolo_cafe=StringVar()
+B_bolo_cenoura=StringVar()
+B_bolo_chocolate=StringVar()
+B_torta_limao=StringVar()
+#VARIAVEIS DO RODAPE
+Dataordem=StringVar()
+Recibo=StringVar()
+Imposto=StringVar()
+Subtotal=StringVar()
+Total=StringVar()
+Totalbolo=StringVar()
+taxaservico=StringVar()
 var1 = IntVar()
 var2 = IntVar()
 var3 = ntVar()
@@ -66,6 +94,30 @@ var16 = IntVar()
 var17 = IntVar()
 var18 = IntVar()
 # SETANDO AS VARIÁVEIS
+C_Latte=StringVar()
+C_LatteGelado=StringVar()
+C_cafegelado=StringVar()
+C_cafecreme=StringVar()
+C_cafecortado=StringVar()
+C_cappuccino=StringVar()
+C_cappuccinogelado=StringVar()
+C_cafepreto=StringVar()
+B_bolo_limao=StringVar()
+B_bolo_milho=StringVar()
+B_bolo_morango=StringVar()
+B_torta=StringVar()
+B_bolo_cafe=StringVar()
+B_bolo_cenoura=StringVar()
+B_bolo_chocolate=StringVar()
+B_torta_limao=StringVar()
+Dataordem=StringVar()
+Recibo=StringVar()
+Imposto=StringVar()
+Subtotal=StringVar()
+Total=StringVar()
+Totalbolo=StringVar()
+taxaserviço=StringVar()
+C_Latte.set("0")
 var1.set("0")
 var2.set("0")
 var3.set("0")
@@ -85,87 +137,76 @@ var16.set("0")
 var17.set("0")
 var18.set("0")
 # CRIANDO OS RADIO BUTTONS PARA O CAFE
-Cafe_comLeite = Checkbutton(framef1aa, text=”Cafe_comLeite \t
+Latte = Checkbutton(framef1aa, text=”Cafe_comLeite \t
 ", variable = var1, onvalue = 1, offvalue = 0, width=20, bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0,sticky = W)
-Expresso = Checkbutton(framef1aa, text=”Expresso \t
+Latte_Gelado = Checkbutton(framef1aa, text=”Expresso \t
 ", variable = var2, onvalue = 1, offvalue = 0, width=20,bg='DarkSeaGreen3',fg='blue', font=('arial', 18, 'bold')).grid(row=1,sticky = W)
-Cafe_comChantilly = Checkbutton(framef1aa, text=”Cafe_comChantilly \t
+Cafe_Creme = Checkbutton(framef1aa, text=”Cafe_comChantilly \t
 ", variable = var3, onvalue = 1, offvalue = 0, width=20,bg='DarkSeaGreen3',fg='blue', font=('arial', 18, 'bold')).grid(row=2,sticky = W)
-Cafe_Gelado = Checkbutton(framef1aa, text=”Cafe_Gelado \t
+Cafe_Cortado = Checkbutton(framef1aa, text=”Cafe_Gelado \t
 ", variable = var4, onvalue = 1, offvalue = 0, width=20,bg='DarkSeaGreen3',fg='blue', font=('arial', 18, 'bold')).grid(row=2,sticky = W)
-Cafe_Cremoso = Checkbutton(framef1aa, text=”Cafe_Cremoso  \t
+Cappuccino = Checkbutton(framef1aa, text=”Cafe_Cremoso  \t
 ", variable = var5, onvalue = 1, offvalue = 0, width=20, font=('arial', 18, 'bold')).grid(row=3,sticky = W)
-Cafe_comChocolate = Checkbutton(framef1aa, text=”Cafe_comChocolate \t
+Cappuccino_Gelado = Checkbutton(framef1aa, text=”Cafe_comChocolate \t
 ", variable = var6, onvalue = 1, offvalue = 0, width=20,bg='DarkSeaGreen3',fg='blue', font=('arial', 18, 'bold')).grid(row=4,sticky = W)
-Cafe_Preto = Checkbutton(framef1aa, text=”Cafe_Preto \t
+Cafe_preto= Checkbutton(framef1aa, text=”Cafe_Preto \t
 ", variable = var7, onvalue = 1, offvalue = 0, width=20,bg='DarkSeaGreen3',fg='blue', font=('arial', 18, 'bold')).grid(row=5,sticky = W)
-Cafe_Creme =Checkbutton(framef1aa, text=”Cafe_Creme \t
-", variable = var8, onvalue = 1, offvalue = 0, width=20,bg='DarkSeaGreen3',fg='blue', font=('arial', 18, 'bold')).grid(row=6,sticky = W)
-Cappuccino = Checkbutton(framef1aa, text=”Cappuccino \t
-", variable = var9, onvalue = 1, offvalue = 0, width=20,bg='DarkSeaGreen3',fg='blue', font=('arial', 18, 'bold')).grid(row=7,sticky = W)
 # CRIANDO OS RADIO BUTTONS PARA OS BOLOS
-Bolo_Limao = Checkbutton(framef1ab, text="Bolo_Limao \t", variable=var9, onvalue=1, offvalue=0,
-width=15,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
-Bolo_Milho = Checkbutton(framef1ab, text="Bolo_Milho \t", variable=var10, onvalue=1, offvalue=0, width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
-Bolo_Morando = Checkbutton(framef1ab, text="Bolo_Morando \t", variable=var11, onvalue=1, offvalue=0, width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
-Torta = Checkbutton(framef1ab, text="Torta \t", variable=var12, onvalue=1, offvalue=0, width=13,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
-Bolo_Cenoura = Checkbutton(framef1ab, text="Bolo_Cenoura \t", variable=var13, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
-Bolo_Chocolate = Checkbutton(framef1ab, text="Bolo_Chocolate \t", variable=var14, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
-Bolo_Prestigio = Checkbutton(framef1aa, text="Bolo_Prestigio \t", variable=var15, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
-Bolo_FlorestaNegra = Checkbutton(framef1ab, text="Bolo_FlorestaNegra \t", variable=var16, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
-Bolo_Pamonha = Checkbutton(framef1ab, text="Bolo_Pamonha \t", variable=var17, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
-Bolo_SonhoDeValsa = Checkbutton(framef1ab, text="Bolo_SonhoDeValsa \t", variable=var18, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold')).grid(row=0, sticky=W)
+Bolo_Limao=Checkbutton(framef1ab,text="Bolo_Limao",variable=var9,onvalue=1,offvalue=0,width=15,bg='DarkSeaGreen3',fg='blue',font('ariel',18,'bold'),command=chkBolo_Limao).grid(row=0,sticky=W)
+Bolo_Milho = Checkbutton(framef1ab, text="Bolo_Milho \t", variable=var10, onvalue=1, offvalue=0, width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold'),command=chkBolo_Milho).grid(row=0, sticky=W)
+Bolo_morando = Checkbutton(framef1ab, text="Bolo_Morando \t", variable=var11, onvalue=1, offvalue=0, width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold'),command=chkBolo_morando).grid(row=0, sticky=W)
+Torta = Checkbutton(framef1ab, text="Torta \t", variable=var12, onvalue=1, offvalue=0, width=13,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold'),command=chkTorta).grid(row=0, sticky=W)
+Bolo_Cafe = Checkbutton(framef1ab, text="Bolo_Cafe \t", variable=var13, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold'),command=chkBolo_Cafe).grid(row=0, sticky=W)
+Bolo_Cenoura = Checkbutton(framef1ab, text="Bolo_Cenoura \t", variable=var14, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold'),command=chkBolo_Cenoura).grid(row=0, sticky=W)
+Bolo_Chocolate = Checkbutton(framef1aa, text="Bolo_Chocolate \t", variable=var15, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold'),command=chkBolo_Chocolate).grid(row=0, sticky=W)
+Torta_Limao = Checkbutton(framef1ab, text="Torta_Limao \t", variable=var16, onvalue=1, offvalue=0,width=20,bg='DarkSeaGreen3',fg='blue',font=('arial', 18, 'bold'),command=chkTorta_Limao).grid(row=0, sticky=W)
 # CRIANDO OS CAMPOS DE TEXTO, CAIXA TEXTO DO CAFÉ
-txtLatte = Entry(frame1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=6, justify='left', state=NORMAL)
+txtLatte = Entry(frame1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=6, justify='left', textvariable=C_Latte, state=NORMAL)
 txtLatte.grid(row=0, column=1)
-txtLatte = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', state=NORMAL)
-txtLatte.grid(row=1, column=1)
-txtLatte = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=2, column=1)
-txtLatte = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=3, column=1)
-txtLatte = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', state=DISABLED)
+txtLatteGelado = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', textvariable=C_LatteGelado, state=NORMAL)
+txtLatteGelado.grid(row=1, column=1)
+txtcafegelado = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', textvariable=C_cafegelado, state=DISABLED)
+txtcafegelado.grid(row=2, column=1)
+txtcafecreme = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', textvariable=C_cafecreme, state=DISABLED)
+txtcafecreme.grid(row=3, column=1)
+txtLatte = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', textvariable=C_cafecortado, state=DISABLED)
 txtLatte.grid(row=4, column=1)
-txtLatte = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=5, column=1)
-txtLatte = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=6, column=1)
-txtLatte = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=7, column=1)
-txtLatte = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=8, column=1)
+txtcappuccino = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', textvariable=C_cappuccino, state=DISABLED)
+txtcappuccino.grid(row=5, column=1)
+txtcappuccinogelado = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', textvariable=C_cappuccinogelado, state=DISABLED)
+txtcappuccinogelado.grid(row=6, column=1)
+txtcafepreto = Entry(framef1aa, font=('arial', 16, 'bold'), bd=1,bg='SKYBlue1', width=8, justify='left', textvariable=C_cafepreto, state=DISABLED)
+txtcafepreto.grid(row=7, column=1)
 # CRIANDO OS CAMPOS DE TEXTO, CAIXA TEXTO, DOS BOLOS
-txtLatte = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, width=6, justify='left', state=DISABLED)
-txtLatte.grid(row=0, column=1)
-txtLatte = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', state=DISABLED)
+txtbolo_limao = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, bg='SKyBlue1', width=6, justify='left', textvariable=B_bolo_limao, state=DISABLED)
+txtbolo_limao.grid(row=0, column=1)
+txtLatte = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, bg='SKyBlue1', width=8, justify='left', textvariable=B_bolo_milho, state=DISABLED)
 txtLatte.grid(row=1, column=1)
-txtLatte = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=2, column=1)
-txtLatte = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=3, column=1)
-txtLatte = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=4, column=1)
-txtLatte = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=5, column=1)
-txtLatte = Entry(framef1ab, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=6, column=1)
-txtLatte = Entry(framef1ab, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=7, column=1)
-txtLatte = Entry(framef1ab, font=('arial', 16, 'bold'), bd=1, width=8, justify='left', state=DISABLED)
-txtLatte.grid(row=8, column=1)
+txtbolo_morango = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, bg='SKyBlue1', width=8, justify='left', textvariable=B_bolo_morango, state=DISABLED)
+txtbolo_morango.grid(row=2, column=1)
+txttorta = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, bg='SKyBlue1', width=8, justify='left',textvariable=B_torta, state=DISABLED)
+txttorta.grid(row=3, column=1)
+txtbolo_cafe = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, bg='SKyBlue1', width=8, justify='left', textvariable=B_bolo_cafe, state=DISABLED)
+txtbolo_cafe.grid(row=4, column=1)
+txtbolo_cenoura = Entry(frame1ab, font=('arial', 16, 'bold'), bd=1, bg='SKyBlue1', width=8, justify='left', textvariable=B_bolo_cenoura, state=DISABLED)
+txtbolo_cenoura.grid(row=5, column=1)
+txtbolo_chocolate = Entry(framef1ab, font=('arial', 16, 'bold'), bd=1, bg='SKyBlue1', width=8, justify='left', textvariable=B_bolo_chocolate, state=DISABLED)
+txtbolo_chocolate.grid(row=6, column=1)
+txttorta_limao = Entry(framef1ab, font=('arial', 16, 'bold'), bd=1, bg='SKyBlue1', width=8, justify='left', textvariable=B_torta_limao, state=DISABLED)
+txttorta_limao.grid(row=7, column=1)
 # CAMPO DO RECIBO
 lblRecibo = Label = (frameft2, font=('arial', 12, 'bold'), text = "Recibo do Cliente :", bd = 2, anchor = 'W')
 lblRecibo.grid(row=0, column=0, sticky=W)
 lblRecibo = Text = (frameft2, width=59, height=28, bg"white", bd3, font=('arial', 10))
 textRecibo.grid(row=1, column=0)
 # CAMPOS DOS BOTÕES
-cmdTotal = Button(framefb2, padx=16, pady=1, bg='black’, bd=4, fg='green', font=('arial', 16, 'bold'), width=5, text='Total').grid(
+cmdTotal = Button(framefb2, padx=16, pady=1, bg='black’, bd=4, fg='green', font=('arial', 16, 'bold'), width=5, text=”Total”).grid(
    row=0, column=0)
-cmdRecibo = Button(framefb2, padx=16, pady=1, bg='black’, bd=4, fg=’white', font=('arial', 16, 'bold'), width=5, text='Recibo').grid(
+cmdRecibo = Button(framefb2, padx=16, pady=1, bg='black’, bd=4, fg=’white', font=('arial', 16, 'bold'), width=5, text=”Recibo”).grid(
    row=0, column=1)
-cmdLimpar = Button(framefb2, padx=16, pady=1, bg='black’, bd=4, f'g=’yellow', font=('arial', 16, 'bold'), width=5, text='Limpar').grid(
+cmdLimpar = Button(framefb2, padx=16, pady=1, bg='black’, bd=4, f'g=’yellow', font=('arial', 16, 'bold'), width=5, text=”Limpar”,command=Limpar).grid(
    row=0, column=2)
-cmdSair = Button(framefb2, padx=16, pady=1, bg='black’, bd=4, fg='red', font=('arial', 16, 'bold'), width=5, text='Sair').grid(
+cmdSair = Button(framefb2, padx=16, pady=1, bg='black’, bd=4, fg='red', font=('arial', 16, 'bold'), width=5, text=”Sair”,command=iExit).grid(
    row=0, column=3)
 # CRIANDO OS CAMPOS DO RODAPE  FRAME DA ESQUERDA
 lblCustobedidas = Label(framef2aa, font=('arial', 12, 'bold'), text="Custo Bebidas :", bd=2)
@@ -200,4 +241,6 @@ txtCustobebidas = Entry(framef2ab, font=('arial', 16, 'bold')
 bd = 2, justify = 'left')
 txtCustobebidas.grid(row=2, column=1)
 root.mainloop()
+
+
 
