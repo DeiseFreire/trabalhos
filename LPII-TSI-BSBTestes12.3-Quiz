@@ -1,24 +1,42 @@
+Parcial correta
 Pergunta 1
-Veja o código:
-
-valores = ("a","b","c","d","e")
-#AQUI
-Cada função abaixo pode ser inserida e executada corretamente no lugar de #AQUI, exceto:
-
-[ ]  len(valores) 
-[x]  del(valores[0]) 
-[ ]  min(valores) 
-[ ]  max(valores) 
-Importante saber que existem algumas funções que funcionam com todos os tipos de sequências como os built-ins: len, min e max.
-
-O del também é uma função built-in, mas só funciona para sequências mutáveis como listas. Como o tuple é imutável, não podemos remover seus elemento, e logo o código dá erro.
-
-Veja o mesmo exemplo correto usando uma lista:
-
-valores = ["a","b","c","d","e"]
-del(valores[0]) #funciona pois é lista
+0,09 / 0,17 pts
+Quais são as principais diferenças entre as sequências do tipo list e tuple?
+[x]  list usa colchetes [] para inicialização, tuple usa parênteses () 
+[x]   list não pode ser usado no laço for, tuple sim 
+[ ]   list possui um índice, tuple não 
+[x]   list é mutável, tuple é imutável 
+[ ]   list tem um limite de valores, tuple não 
  
 Pergunta 2
+0,17 / 0,17 pts
+Veja todas as afirmações abaixo.
+
+Todas as sequências abaixo são imutáveis, exceto:
+
+[ ]   range 
+[ ]   str 
+[x]   list 
+[ ]   tuple 
+Já vimos nos vídeos as sequências str (strings), tuple, list e range.
+
+Entre essas sequências, list é a única que é mutável. tuple, str e range são imutáveis.
+
+Não falamos explicitamente que range é imutável, mas saiba que ele se comporta como tuples e strs.
+
+Parcial correta
+Pergunta 3
+0,11 / 0,17 pts
+Quais dos tipos abaixo são considerados sequências?
+[ ]   string 
+[ ]   bool 
+[ ]   int 
+[x]   tuple 
+[x]   list 
+ 
+Incorreto
+Pergunta 4
+0 / 0,17 pts
 O Pedro é um desenvolvedor Python Júnior e precisa corrigir o código abaixo que está dando erro:
 
 nomes = ("Nico", "Douglas", "Flavio", "Daniel")
@@ -28,46 +46,41 @@ Quais alternativas ele pode usar no lugar de #AQUI para o código funcionar?
 
 Selecione 2 opções.
 
-[ ]  nomes = (nomes) 
-[ ]  nomes = tuple(nomes) 
-[ ]  nomes = nomes[0] 
-[ ]  nomes = [] 
-[x]  nomes = list(nomes) 
+[ ]   nomes = (nomes) 
+[ ]   nomes = nomes[0] 
+[x]   nomes = tuple(nomes) 
+[ ]   nomes = [] 
+[x]   nomes = list(nomes) 
  
-Parcial
-Pergunta 3
-Quais dos tipos abaixo são considerados sequências?
-[x]  tuple 
-[ ]  int 
-[x]  list 
-[ ]  bool 
-[ ]  string 
- 
-Pergunta 4
+Pergunta 5
+0,17 / 0,17 pts
 Quais dos exemplos abaixo são mais propensos a ser usados como tuples invés de listas?
 
 Selecione 3 opções.
 
-[ ]  Nomes de pessoas onde não sabemos quantas existem Alternativa correta Nomes dos meses 
 [x]   Nomes dos meses 
-[x]  Nome das estações do ano 
-[x]  Nomes dos estados do pais 
-[ ]  Valores de CPF variáveis 
+[ ]   Valores de CPF variáveis 
+[ ]   Nomes de pessoas onde não sabemos quantas existem Alternativa correta Nomes dos meses 
+[x]   Nomes dos estados do pais 
+[x]   Nome das estações do ano 
  
-Pergunta 5
-Quais são as principais diferenças entre as sequências do tipo list e tuple?
-[ ]  list não pode ser usado no laço for, tuple sim 
-[ ]  list tem um limite de valores, tuple não 
-[x] list é mutável, tuple é imutável 
-[x] list usa colchetes [] para inicialização, tuple usa parênteses () 
-  list possui um índice, tuple não 
-
 Pergunta 6
-Veja todas as afirmações abaixo.
+0,17 / 0,17 pts
+Veja o código:
 
-Todas as sequências abaixo são imutáveis, exceto:
+valores = ("a","b","c","d","e")
+#AQUI
+Cada função abaixo pode ser inserida e executada corretamente no lugar de #AQUI, exceto:
 
-[ ]  str 
-[ ]  tuple 
-[x]  list 
-[ ]  range 
+[ ]   max(valores) 
+[x]   del(valores[0]) 
+[ ]   len(valores) 
+[ ]   min(valores) 
+Importante saber que existem algumas funções que funcionam com todos os tipos de sequências como os built-ins: len, min e max.
+
+O del também é uma função built-in, mas só funciona para sequências mutáveis como listas. Como o tuple é imutável, não podemos remover seus elemento, e logo o código dá erro.
+
+Veja o mesmo exemplo correto usando uma lista:
+
+valores = ["a","b","c","d","e"]
+del(valores[0]) #funciona pois é lista
