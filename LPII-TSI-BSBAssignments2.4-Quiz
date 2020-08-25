@@ -1,0 +1,19 @@
+Parcial correta
+Pergunta 1
+0,17 / 0,5 pts
+Quais funções existem no Python 3?
+[x]  input(...) 
+[x]  raw_input(..) 
+[x]  print(...) 
+[ ]  int(...) 
+ 
+Parcial correta
+Pergunta 2
+0,25 / 0,5 pts
+Marque todas as alternativas verdadeiras:
+[x]  No Python 2, a função print aceita o parâmetro nomeado sep. 
+[ ]  No Python 3, a instrução print("ola", "mundo") imprime como saída ola mundo, diferente do Python 2, que possui como saída ('ola', 'mundo'). 
+[x]  A função raw_input só existe em Python 2 e quando usada, lê a entrada como str, sem realizar conversões de tipos, como na função input. 
+[x]  Uma função em Python 3 sempre deve possuir parênteses. 
+[x]  No Python 2, quando digitamos um valor numérico através de input, ele automaticamente converte de str para int. Já o Python 3 não assume essa conversão automática, 
+sendo o desenvolvedor responsável por fazê-la. 
