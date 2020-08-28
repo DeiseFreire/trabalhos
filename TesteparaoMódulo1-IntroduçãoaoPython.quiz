@@ -1,0 +1,64 @@
+O que é uma variável? *
+2 pontos
+[ ] É um pequeno TRECHO DE PROGRAMA que pode ser referenciado múltiplas vezes posteriormente dentro do seu código.
+[ ] É uma forma de percorrer dados em SEQUÊNCIA para manipulá-los em seu programa.
+[x] É um nome através do qual você pode referenciar e manipular DADOS dentro do seu programa.
+[ ] É um trecho de código que começa com o símbolo '#', e que é IGNORADO pelo interpretador Python.
+
+Para que serve a função "input" em Python? *
+2 pontos
+Para imprimir dados gerados pelo seu programa na tela do computador.
+[x] Para solicitar ao usuário que digite um dado no teclado para ser utilizado pelo seu programa.
+[ ] Para fazer o tratamento de erros caso o usuário tenha digitado, por exemplo, um número inválido.
+[ ] Para salvar dados em um arquivo.
+
+No seguinte código, o que acontece se a variável "numero" tiver o valor 9? *
+2 pontos
+if numero % 3 == 0:
+print("O teste do IF deu resultado VERDADEIRO")
+else:
+print("O teste do IF deu resultado FALSO")
+[x] O programa irá imprimir na tela a frase "O teste do IF deu resultado VERDADEIRO".
+[ ] O programa irá imprimir na tela a frase "O teste do IF deu resultado FALSO".
+[ ] O programa não irá imprimir nada.
+[ ] O programa dará uma mensagem de erro e a execução do programa será interrompida.
+
+Resposta correta
+O programa irá imprimir na tela a frase "O teste do IF deu resultado VERDADEIRO".
+Feedback
+Esse código testa se o conteúdo da variável "numero" dividido por três tem resto 0. Como 9 é divisível por 3, o resto é realmente 0.
+
+A função "len", como vimos, conta a quantidade de elementos em uma lista. Uma lista, por sua vez, pode conter números, letras, strings ou até outra lista. Sabendo que cada ítem de uma lista conta como um (e apenas um) nessa contagem, o que será exibido na tela pelo programa abaixo quando executado? *
+2 pontos
+lista = ['a', ['b','c'],'d',[['e'],'f']]
+print(len(lista))
+[ ] 7
+[ ] 6
+[ ] 5
+[x] 4
+
+Resposta correta
+4
+Feedback
+Lembre-se, uma lista conta como apenas um elemento quando está dentro de outra lista.
+
+Teste para o Módulo 1 - Introdução ao Python
+
+A função "contarLetra" abaixo é uma variação da função que vimos anteriormente para poder contar a quantidade de qualquer letra em uma frase, não apenas a letra "a". Para isso, foram adicionados dois parâmetros extras: a letra minúscula e a letra maiúscula a serem procuradas. Qual das formas de chamar a função abaixo é a correta para contar a quantidade de vogais em uma frase? *
+2 pontos
+def contarLetra(fraseAtual,letraMinuscula,letraMaiuscula):
+quantidadeLetra=0
+for letra in fraseAtual:
+if letra == letraMinuscula or letra == letraMaiuscula
+quantidadeLetra=quantidadeLetra+1
+return quantidadeLetra
+[ ] vogais = contarLetra(frase, ['a', 'A']) + contarLetra(frase, ['e', 'E']) + contarLetra(frase, ['i', 'I']) + contarLetra(frase, ['o', 'O']) + contarLetra(frase, ['u', 'U'])
+[ ] vogais = contarLetra(frase, ['a', 'e', 'i', 'o', 'u'], ['A', 'E', 'I', 'O', 'U'])
+[x] vogais = contarLetra(frase, 'a', 'A') + contarLetra(frase, 'e', 'E') + contarLetra(frase, 'i', 'I') + contarLetra(frase, 'o', 'O') + contarLetra(frase, 'u', 'U')
+[ ] vogais = contarLetra(frase, 'a', 'e', 'i', 'o', 'u') + contarLetra(frase, 'A', 'E', 'I', 'O', 'U'
+
+Resposta correta
+vogais = contarLetra(frase, 'a', 'A') + contarLetra(frase, 'e', 'E') + contarLetra(frase, 'i', 'I') + contarLetra(frase, 'o', 'O') + contarLetra(frase, 'u', 'U')
+
+Feedback
+Lembre-se, essa função possui exatamente três parâmetros: o primeiro é uma frase, o segundo e o terceiro são respectivamente uma letra minúscula e uma maiúscula. Listas, por mais elementos que tenham, são consideradas como um só parâmetro! ;)
