@@ -1,0 +1,63 @@
+Teste para o Módulo 4 - Regressão Logística e Encerramento
+ 
+Qual a diferença entre regressão linear e regressão logística?
+2/2
+A regressão linear utiliza várias variáveis de entrada e a regressão logística utiliza apenas uma variável de entrada.
+ 
+[ ] A regressão logística utiliza várias variáveis de entrada e a regressão linear utiliza apenas uma variável de entrada.
+[ ] A regressão linear lida com problemas de classificação e a regressão logística com problemas de valores numéricos contínuos.
+[x] A regressão logística lida com problemas de classificação e a regressão linear com problemas de valores numéricos contínuos.
+
+Resposta correta
+A regressão logística lida com problemas de classificação e a regressão linear com problemas de valores numéricos contínuos.
+
+Feedback
+Tanto a regressão linear quanto a logística podem lidar com uma ou várias variáveis de entrada, mas uma delas lida com problemas de classificação e a outra lida com problemas de valores numéricos contínuos.
+ 
+Qual a vantagem de utilizar a biblioteca "pandas" para os algorítimos de machine learning? *
+2/2
+[ ] Ela possui as implementações dos algorítimos de regressão linear e regressão logística.
+[x] Ela permite transformar matrizes em uma tabela e indexar colunas através do nome, e não de um índice numérico.
+[ ] Ela permite operações como multiplicação entre matrizes e transposição de matrizes.
+[ ] Nenhuma das anteriores.
+
+Nenhuma resposta correta
+ 
+Na regressão logística, como é possível classificar se as variáveis de entrada se enquadram em mais de uma categoria? *
+2/2
+[ ] Não é possível classificar mais de uma categoria, em qualquer hipótese.
+[ ] Basta passar todos os possíveis valores de Y para o um modelo único e ele determina automaticamente a qual(is) a(s) categoria(s) aquele caso pertence.
+[x] É necessário criar um modelo para cada categoria e realizar o teste em cada uma das categorias para saber a quais delas aquele caso pertence.
+[ ] Nenhuma das anteriores.
+
+Resposta correta
+É necessário criar um modelo para cada categoria e realizar o teste em cada uma das categorias para saber a quais delas aquele caso pertence.
+
+Feedback
+Um modelo pode classificar apenas uma situação (por exemplo, se o paciente tem ou não gripe), mas com múltiplos modelos, cada um para um caso particular, é possível classificar múltiplas situações (por exemplo, se o paciente tem gripe, dengue ou outras doenças).
+ 
+Qual o melhor algorítimo para determinar o provável preço de um veículo baseado em quilometragem, idade do carro e número de portas? *
+2/2
+[x] Regressão linear.
+[ ] Regressão logística.
+[ ] Regressão matricial.
+[ ] Outro algorítimo.
+
+Resposta correta
+Regressão linear.
+
+Feedback
+O algorítimo para determinar preço de veículos é o mesmo já utilizado no exemplo do preço de imóveis!
+ 
+Qual a melhor forma, utilizando machine learning, para determinar se uma mensagem é ou não spam? *
+2/2
+[ ] Transformamos a quantidade de linhas da mensagem em uma característica (ou seja, uma variável) e aplicamos o algorítimo de regressão LINEAR.
+[x] Transformamos a frequência de cada palavra da mensagem em uma característica (ou seja, uma variável) e aplicamos o algorítimo de regressão LOGÍSTICA.
+[ ] Criamos uma black list de quem envia o e-mail e sempre marcamos como spam mensagens enviadas por ela.
+[ ] Não é possível determinar se uma mensagem é ou não spam com algorítimos de machine learning porque não há como extrair variáveis numéricas a partir de uma mensagem de e-mail.
+
+Resposta correta
+Transformamos a frequência de cada palavra da mensagem em uma característica (ou seja, uma variável) e aplicamos o algorítimo de regressão LOGÍSTICA.
+
+Feedback
+Precisamos achar uma característica que possa ser quantificada (ou seja, transformada numa variável numérica) e processada pelo algorítimo escolhido. Nesse caso, estamos falando sobre um algorítimo de classificação (se é spam ou não).
