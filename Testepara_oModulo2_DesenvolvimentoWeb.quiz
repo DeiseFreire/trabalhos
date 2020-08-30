@@ -1,0 +1,63 @@
+Teste para o Módulo 2 - Desenvolvimento Web
+
+Qual a diferença entre a Internet e a Web? *
+2 pontos
+[ ] Nenhuma, a Internet e a Web são nomes diferentes para a mesma coisa
+[x] A Internet é uma "rede de redes" e a Web utiliza a internet para a troca de dados multimídia
+[ ] A Internet é uma rede de computadores e a Web é uma "rede de redes"
+[ ] A Internet não permite troca de arquivos, apenas a Web permite troca de arquivos
+
+Feedback
+Sim! A Internet é, de certa forma, uma "rede de redes" de computadores, e a Web é uma camada de software que roda por cima da Internet e que permite troca de arquivos como páginas HTML, imagens, vídeos etc. de forma simples e eficiente.
+
+Os arquivos CSS são... *
+2 pontos
+[ ] ... arquivos de template que permitem que dados específicos sejam inseridos dinamicamente antes de serem enviados para o browser.
+[ ] ... arquivos em formato texto que representam os documentos estruturados exibidos diretamente pelo browser.
+[x] ... arquivos em formato texto que permitem alterar os aspectos de exibição (cor, tamanho de fonte etc.) de uma página exibida pelo browser.
+[ ] ... arquivos que podem ser importados no seu programa Python para fornecer funções reutilizáveis.
+
+Feedback
+Os arquivos CSS são utilizados para auxiliar o browser a formatar a exibição de uma página HTML.
+
+As páginas HTML estáticas são úteis para: *
+2 pontos
+[x] Exibir dados que não são alterados com frequência, tais como endereço, contato e história no site de uma empresa.
+[ ] Exibir dados buscados do banco de dados em tempo real, tais como o extrato bancário de um cliente no site de um banco.
+[ ] Exibir tanto dados que não são alterados com frequência quanto dados alterados em tempo real.
+[ ] Exibir textos digitados pelo usuário em um formulário que foi enviado para o servidor web.
+
+Feedback
+As páginas HTML estáticas não mostram dados dinâmicos, ou seja, o conteúdo delas não é alterado de qualquer forma pelo servidor web antes de ela ser enviada para o browser de quem está acessando a página.
+
+Dos trechos de arquivos abaixo, o que precisa ser alterado para que o nome digitado na página index.html seja exibido corretamente na página resposta.html após ser processado pelo servidor.py? *
+2 pontos
+index.html
+<form action="resposta.html" method="get">
+<label for="nome">Digite seu nome: </label><input type="text" name="nome"/>
+<input type="submit"value="Enviar"/>
+</form>
+servidor.py
+variaveis=parse_qs(urlparse(self.path).query)
+pessoa=variaveis.get('nome')
+#...
+response=template.render(pessoa=nome)
+resposta.html
+<p>Olá, {{pessoa}}!</p>
+[ ] A linha 16 do arquivo index.html
+[ ] A linha 68 do arquivo servidor.py
+[x] A linha 72 do arquivo servidor.py
+[ ] A linha 15 do arquivo resposta.html
+
+Feedback
+Os nomes das variáveis no programa Python não precisam ser os mesmos das variáveis no template, nem dos campos texto do formulário HTML. Porém, é necessário ficar atento para que o nome da variável seja sempre igual no mesmo contexto, ou seja: o campo HTML a ser obtido deve ter o mesmo nome na página e no programa, a variável Python deve sempre usar o mesmo nome escolhido na hora de sua criação e o nome da variável no template (sempre o nome à esquerda na hora de renderizar) deve ser o mesmo utilizado no template em si.
+
+As bibliotecas em Python servem para: *
+2 pontos
+[ ] Fornecer funcionalidades exclusivamente de um servidor web.
+[ ] Exibir na tela informações sobre como utilizar um comando Python específico.
+[ ] Tratar exceções em caso de entrada de dados incorretos ou outros erros previstos.
+[x] Reutilizar funções já prontas em diversos programas Python diferentes.
+
+Feedback
+Bibliotecas podem ser fornecidas pelo Python, por outras pessoas ou até escritas por você mesmo. A finalidade é reutilizar funções já prontas para não reinventar a roda!
