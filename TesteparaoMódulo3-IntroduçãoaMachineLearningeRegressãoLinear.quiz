@@ -1,0 +1,57 @@
+Teste para o Módulo 3 - Introdução a Machine Learning e Regressão Linear 
+
+Sobre machine learning, qual é a afirmação correta? *
+2/2
+[ ] Machine learning é também conhecido como e-learning, e consiste no ensino para pessoas de forma remota, através do uso de máquinas conectadas à internet.
+[x] Machine learning é o ramo da computação que trata da solução de problemas através do aprendizado do algorítimo a partir de exemplos reais. 
+[ ] Machine learning é o ramo da computação que trata de algorítimos adequados para o ensino de programação.
+[ ] Machine learning engloba a área conhecida como inteligência artificial, além de outros tipos de algorítimos.
+
+Feedback
+Machine learning é uma área específica da inteligência artificial com algorítimo para aprendizagem de máquina a partir de exemplos reais.
+ 
+Dada a seguinte lista: primos = [1, 2, 3, 5, 7, 9, 11, 13], o que a linha "print(primos[3])" irá imprimir? *
+2/2
+[ ] 3
+[x] 5
+[ ] 7
+[ ] 9
+Resposta correta
+5
+Feedback
+Lembre-se, a indexação de elementos numa lista em Python começa sempre com o índice 0 para o primeiro elemento.
+ 
+Na biblioteca NumPy, para que serve o método np.dot()? *
+2/2
+[ ] Para transpor uma matriz.
+[ ] Para a multiplicação de uma matriz por um escalar.
+[x] Para a multiplicação entre duas matrizes. 
+[ ] Para calcular o determinante de uma matriz.
+Feedback
+O método np.dot() serve para a multiplicação entre duas matrizes, desde que elas sigam a regra de multiplicação entre matrizes: a matriz à esquerda deve ter 
+A linhas x B colunas e a matriz à direita deve ter B linhas e C colunas. A matriz resultante tem A linhas x C colunas.
+ 
+Qual é a opção que melhor explica o funcionamento do algorítimo de regressão linear? *
+2/2
+[ ] Coleta de entradas e saídas de exemplos reais e execução de previsão.
+[ ] Treinamento do modelo do algorítimo com dados aleatórios, coleta de entradas e saídas de exemplos reais para melhorar o algorítimo e execução de previsão 
+com o modelo treinado.
+[x] Coleta de entradas e saídas de exemplos reais, treinamento do modelo do algorítimo e execução de previsão com o modelo treinado.
+[ ] Nenhuma das opções anteriores.
+Feedback
+Muito bem! Precisamos sempre partir de exemplos reais já observados, treinar o algorítimo com esses dados e só então poderemos executar previsões em cima desse modelo.
+ 
+Sobre o nosso algorítimo para determinar o preço de imóveis, qual afirmação é verdadeira? *
+2/2
+[ ] Quando executamos uma previsão, o valor do imóvel é a nossa variável de entrada.
+[ ] O gráfico de idade x preço mostra que o preço do imóvel cresce conforme cresce também a idade do imóvel.
+[x] O gráfico de área x preço mostra que o preço do imóvel decresce conforme decresce também a área.
+[ ] O número de dormitórios não influencia no resultado que obtivemos com o algorítimo.
+
+Resposta correta
+O gráfico de área x preço mostra que o preço do imóvel decresce conforme decresce também a área.
+
+Feedback
+Cada variável pode influenciar diretamente ou inversamente no valor do imóvel, que é nossa variável de SAÍDA. Dica: reveja o trecho do vídeo onde mostro os três 
+gráficos (área x preço, dormitórios x preço e idade x preço) e veja que uma delas é inversamente proporcional ao preço do imóvel - quanto mais alto o valor dela, 
+mais baixo o preço, com o gráfico inclinado para baixo da esquerda pra direita.
