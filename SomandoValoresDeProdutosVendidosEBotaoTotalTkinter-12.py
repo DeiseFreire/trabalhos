@@ -1,4 +1,4 @@
-#https://www.youtube.com/watch?v=jTzYc8saGqE&list=PL2Dw5PtrD32zzkQ1OQyN4gz3I_8G1MMHl&index=12
+# https://www.youtube.com/watch?v=jTzYc8saGqE&list=PL2Dw5PtrD32zzkQ1OQyN4gz3I_8G1MMHl&index=12
 
 import tkinter
 import random
@@ -94,7 +94,6 @@ txtbolo_cafe.configure(state=DISABLED)
 txtbolo_cenoura.configure(state=DISABLED) 
 txtbolo_chocolate.configure(state=DISABLED) 
 txttorta_limao.configure(state=DISABLED) 
-
 #CRIANDO OS METODOS PARA OS RADIO BUTTONS
 def chkLatte():
 if(var1.get()==1):
@@ -103,7 +102,6 @@ C_Latte.set("")
 elif(var1.get()==0):
 txtLatte.configure(state=DISABLED)
 C_Latte.set("0")
-
 def chkLatte_Gelado():
 if(var2.get()==1):
 txtLatteGelado.configure(state=NORMAL)
@@ -111,8 +109,6 @@ C_LatteGelado.set("")
 elif(var2.get()=0):
 txtLatteGelado.configure(state==DISABLED)
 C_LatteGelado.set("0")
-
-
 def chkCafe_Gelado():
 if(var3.get()==1):
 txtcafegelado.configure(state=NORMAL)
@@ -120,7 +116,6 @@ C_cafegelado.set("")
 elif(var3.get()=0):
 txtcafegelado.configure(state==DISABLED)
 C_cafegelado.set("0")
-
 def chkCafe_Creme():
 if(var4.get()==1):
 txtcafecreme.configure(state=NORMAL)
@@ -128,7 +123,6 @@ C_cafegelado.set("")
 elif(var4.get()=0):
 txtcafecreme.configure(state==DISABLED)
 C_cafecreme.set("0")
-
 def chkCafe_Cortado():
 if(var5.get()==1):
 txtcafecortado.configure(state=NORMAL)
@@ -136,7 +130,6 @@ C_cafecortado.set("")
 elif(var5.get()=0):
 txtcafecortado.configure(state==DISABLED)
 C_cafecortado.set("0")
-
 def chkCappuccino():
 if(var6.get()==1):
 txtcappuccino.configure(state=NORMAL)
@@ -144,7 +137,6 @@ C_cappuccino.set("")
 elif(var6.get()=0):
 txtcappuccino.configure(state==DISABLED)
 C_cappuccino.set("0")
-
 def chkCappuccino_Gelado():
 if(var7.get()==1):
 txtcappuccinogelado.configure(state=NORMAL)
@@ -152,7 +144,6 @@ C_cappuccinogelado.set("")
 elif(var7.get()=0):
 txtcappuccinogelado.configure(state==DISABLED)
 C_cappuccino.set("0")
-
 def chkCafe_preto():
 if(var8.get()==1):
 txtcafepreto.configure(state=NORMAL)
@@ -160,7 +151,6 @@ C_cafepreto.set("")
 elif(var8.get()=0):
 txtcafepreto.configure(state==DISABLED)
 C_cafepreto.set("0")
-
 def chkBolo_Limao():
 if(var9.get()==1):
 txtbolo_limao.configure(state=NORMAL)
@@ -168,7 +158,6 @@ B_bolo_limao.set("")
 elif(var9.get()=0):
 txtbolo_limao.configure(state==DISABLED)
 B_bolo_limao.set("0")
-
 def chkBolo_Milho():
 if(var10.get()==1):
 txtbolo_milho.configure(state=NORMAL)
@@ -176,7 +165,6 @@ B_bolo_milho.set("")
 elif(var10.get()=0):
 txtbolo_milho.configure(state==DISABLED)
 B_bolo_milho.set("0")
-
 def chkBolo_morango():
 if(var11.get()==1):
 txtbolo_morango.configure(state=NORMAL)
@@ -184,7 +172,6 @@ B_bolo_morango.set("")
 elif(var11.get()=0):
 txtbolo_morango.configure(state==DISABLED)
 B_bolo_morango.set("0")
-
 def chkTorta():
 if(var12.get()==1):
 txttorta.configure(state=NORMAL)
@@ -192,7 +179,6 @@ B_torta.set("")
 elif(var12.get()=0):
 txttorta.configure(state==DISABLED)
 B_torta.set("0")
-
 def chkBolo_Cafe():
 if(var13.get()==1):
 txtbolo_cafe.configure(state=NORMAL)
@@ -200,7 +186,6 @@ B_bolo_cafe.set("")
 elif(var13.get()=0):
 txtbolo_cafe.configure(state==DISABLED)
 B_bolo_cafe.set("0")
-
 def chkBolo_Cenoura():
 if(var14.get()==1):
 txtbolo_cenoura.configure(state=NORMAL)
@@ -208,7 +193,6 @@ B_bolo_cenoura.set("")
 elif(var14.get()=0):
 txtbolo_cenoura.configure(state==DISABLED)
 B_bolo_cenoura.set("0")
-
 def chkBolo_Chocolate():
 if(var15.get()==1):
 txtbolo_chocolate.configure(state=NORMAL)
@@ -216,7 +200,6 @@ B_bolo_chocolate.set("")
 elif(var15.get()=0):
 txtbolo_chocolate.configure(state==DISABLED)
 B_bolo_chocolate.set("0")
-
 def chkTorta_Limao():
 if(var16.get()==1):
 txttorta_limao.configure(state=NORMAL)
@@ -245,24 +228,18 @@ Item15=float(B_bolo_chocolate.get())
 Item16=float(B_torta_limao.get())
 Precobebidas=(Item1*1.2)+(Item2*1.99)+(Item3*2.05)+(Item4*2.10)+(Item5*1.99)+(Item6*2.99)+(Item7*1.99)+(Item8*1.99)
 Precobolos=(Item9*1.2)+(Item10*1.99)+(Item11*2.05)+(Item12*2.10)+(Item13*1.99)+(Item14*2.99)+(Item15*1.99)+(Item16*1.99)
-Bebidapreco="i",str('%.2f'%(Precobebidas))  
-Bolopreco="i",str('%.2f'%(Precobolos))  
+Bebidapreco="R$",str('%.2f'%(Precobebidas))  
+Bolopreco="R$",str('%.2f'%(Precobolos))  
 Totalbolo.set(Bolopreco) 
 Totalbebida.set(Bebidapreco)  
-SC="i",str('%.2f'%(0.10))
+SC="R$",str('%.2f'%(0.10))
 Taxaservico.set(SC)  
-SubtotalItens="i",str('%.2f'%(Precobebidas+Precobolos+0,10))      
-Taxa="i",str('%.2f'%((Precobebidas+Precobolos+0.10)*0.15) 
+SubtotalItens="R$",str('%.2f'%(Precobebidas+Precobolos+0,10))      
+Taxa="R$",str('%.2f'%((Precobebidas+Precobolos+0.10)*0.15) 
 Imposto.set(Taxa)
 TT=((Precobebidas+Precobolos+0.10)*0.15) 
-TC="i",str('%.2f'%((Precobebidas+Precobolos+1.60+TT)
+TC="R$",str('%.2f'%((Precobebidas+Precobolos+1.60+TT)
 Total.set(TC)
-
-
-
-
-
-
 # DECLARANDO AS PRIMEIRAS VARIAVEIS
 C_Latte=StringVar()
 C_LatteGelado=StringVar()
