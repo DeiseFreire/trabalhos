@@ -5,7 +5,6 @@
 # -------------------------------------------------------------------------------------------------------------------
 
 '''
-
 1) Verifique se existe o diretório mydir dentro do seu diretório home. Se não existir, crie o diretório. (2 pontos)
 '''
 
