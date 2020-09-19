@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------------------
-Fonte: 
+# Fonte: 
 # Shell Script - Atividade 2 - Criando arquivo e escrevendo texto
 # https://www.youtube.com/watch?v=mP_I1uR0A70&list=PLh7NspZkGKR-8vj6n1iKi1wtlSMORVgo2&index=2
 # -------------------------------------------------------------------------------------------
