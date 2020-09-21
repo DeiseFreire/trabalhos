@@ -17,14 +17,4 @@ echo "$i - O usuário $line usa bash" >> ~/mydir/Deise.txt
 i=$((i+1))
 done 
 
-root:/bin/bash
-deise:/bin/bash
-cérebro-binário[09-scripts] $ sudo chmod +x atividade4.sh
-cérebro-binário[09-scripts] $ ./atividade4.sh
-cérebro-binário[09-scripts] $ code /home/deise/mydir/Deise.txt
-cérebro-binário[09-scripts] $ ./atividade4.sh
-^Ccérebro-binário[09-scripts] $ ./atividade4.sh
-^Ccérebro-binário[09-scripts] $ ./atividade4.sh
-cérebro-binário[09-scripts] $ code /home/deise/mydir/Deise.txt
-cérebro-binário[09-scripts] $ ./atividade4.sh
-cérebro-binário[09-scripts] $ code /home/deise/mydir/Deise.txt
+
