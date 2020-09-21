@@ -12,12 +12,4 @@ no arquivo e xxxx é o nome do login do usuário. (3 pontos)
 
 cut -d':' -f1,7 /etc/passwd | grep '/bin/bash' > ~/mydir/Igor.txt
 
-cérebro-binário[09-scripts] $ sudo chmod +x atividade.sh
-cérebro-binário[09-scripts] $ ./atividade4.sh
-cérebro-binário[09-scripts] $ code /home/deise/mydir/Deise.txt
-cérebro-binário[09-scripts] $ ./atividade4.sh
-^Ccérebro-binário[09-scripts] $ ./atividade4.sh
-^Ccérebro-binário[09-scripts] $ ./atividade4.sh
-cérebro-binário[09-scripts] $ code /home/deise/mydir/Deise.txt
-cérebro-binário[09-scripts] $ ./atividade4.sh
-cérebro-binário[09-scripts] $ code /home/deise/mydir/Deise.txt
+
