@@ -1,5 +1,8 @@
+# --------------------------------------------------------------------------------------------
+# Fonte da ideia: 
 # Exercício Python #092 - Cadastro de Trabalhador em Python
 # https://www.youtube.com/watch?v=Vsqemzdrj78&list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-&index=93
+# --------------------------------------------------------------------------------------------
 
 from datetime import datetime
 
