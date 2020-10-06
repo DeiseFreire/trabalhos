@@ -74,11 +74,11 @@ Laço for finalizado
 # ~/Documentos$                         #
 # ~/Documentos$ ls -l                   #
 #########################################
-# total 8
-# -rwxrwxrwx 1 deise deise 190 Set 28 17:53 break.sh
-# lrwxrwxrwx 1 deise deise 10 Ago 9 20:44 group -> /etc/group
-# -rwxrwxrwx 1 deise deise 407 Set 28 17:48 teste-break.sh
-# ~/Documentos$ '''
+total 8
+-rwxrwxrwx 1 deise deise 190 Set 28 17:53 break.sh
+lrwxrwxrwx 1 deise deise 10 Ago 9 20:44 group -> /etc/group
+-rwxrwxrwx 1 deise deise 407 Set 28 17:48 teste-break.sh
+~/Documentos$ '''
 
 ############### SCRIPT ###############
 #!/bin/bash
