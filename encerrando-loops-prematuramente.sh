@@ -65,13 +65,14 @@ Número: 10
 ~/Documentos$
 teste-break.sh     
 ~/Documentos$ ls -l
+# ------------------------ SAÍDA -----------------------------------
 total 8
 -rwxrwxrwx 1 deise deise 190 Set 28 17:53 break.sh
 lrwxrwxrwx 1 deise deise 10 Ago 9 20:44 group -> /etc/group
 -rwxrwxrwx 1 deise deise 407 Set 28 17:48 teste-break.sh
 ~/Documentos$ '''
 
-# -------------------------- SCRIPT -------------------------------
+# -------------------------- SCRIPT --------------------------------
 #!/bin/bash
 # Testando comando em um laço while
 read -p "Digite um número entre 1 e 10" num
