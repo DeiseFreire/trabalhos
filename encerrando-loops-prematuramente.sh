@@ -4,75 +4,6 @@
 # https://www.youtube.com/watch?v=sfO3ePx8dWY&list=PLucm8g_ezqNrYgjXC8_CgbvHbvI7dDfhs&index=31&t=0s
 # -------------------------------------------------------------------------------------------------
 
-# --------------------------SCRIPT -------------------------------
-for num in 1 2 3 4 5 6 7 8 9 10 
-do 
-echo "Número: $num"
-done
-
-# -------------------- ENTRADA DO TECLADO ------------------------
-'''
-~/Documentos$ nano break.sh
-~/Documentos$ chmod 777 break.sh 
-~/Documentos$ ./break.sh 
-# ------------------------ SAÍDA --------------------------------
-Número: 1
-Número: 2
-Número: 3
-Número: 4
-Número: 5
-Número: 6
-Número: 7
-Número: 8
-Número: 9
-Número: 10 '''
-# --------------------------SCRIPT -------------------------------
-for num in 1 2 3 4 5 6 7 8 9 10 
-do 
-if [ $num -eq 6 ]
-then
-break
-echo "Número: $num"
-done
-  
-# --------------------------SCRIPT -------------------------------
-#!/bin/bash
-# Testando comando break em Shell Scripting
-for num in 1 2 3 4 5 6 7 8 9 10 
-do 
-if [ $num -eq 6 ]
-then
-break
-echo "Número: $num"
-done
-echo "Laço for finalizado"
-
-# ------------------------ SAÍDA --------------------------------
-'''
-Número: 1
-Número: 2
-Número: 3
-Número: 4
-Número: 5
-Número: 6
-Número: 7
-Número: 8
-Número: 9
-Número: 10
-
-# -------------------- ENTRADA DO TECLADO --------------------------
-
-~/Documentos$
-teste-break.sh     
-~/Documentos$ ls -l
-# ------------------------ SAÍDA -----------------------------------
-total 8
--rwxrwxrwx 1 deise deise 190 Set 28 17:53 break.sh
-lrwxrwxrwx 1 deise deise 10 Ago 9 20:44 group -> /etc/group
--rwxrwxrwx 1 deise deise 407 Set 28 17:48 teste-break.sh
-~/Documentos$ '''
-
-# -------------------------- SCRIPT --------------------------------
 #!/bin/bash
 # Testando comando em um laço while
 read -p "Digite um número entre 1 e 10" num
@@ -113,4 +44,17 @@ Digite um número entre 1 e 10: 12
 Número digitado: 12  
 Você digitou um valor maior do que 10. Programa finalizado ''' 
       
+# -------------------- ENTRADA DO TECLADO ------------------------
+'''
+~/Documentos$ nano break.sh
+~/Documentos$ chmod 777 break.sh 
+~/Documentos$ ./break.sh 
+~/Documentos$ ls -l
+teste-break.sh     
+# ------------------------ SAÍDA -----------------------------------
+total 8
+-rwxrwxrwx 1 deise deise 190 Set 28 17:53 break.sh
+lrwxrwxrwx 1 deise deise 10 Ago 9 20:44 group -> /etc/group
+-rwxrwxrwx 1 deise deise 407 Set 28 17:48 teste-break.sh
+~/Documentos$ '''
 
