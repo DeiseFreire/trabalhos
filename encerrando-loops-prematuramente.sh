@@ -4,7 +4,7 @@ do
 echo "Número: $num"
 done
 
-# -------------------- ENTRADA NA TELA --------------------------
+# -------------------- ENTRADA DE TELA --------------------------
 '''
 ~/Documentos$ nano break.sh
 ~/Documentos$ chmod 777 break.sh 
@@ -54,7 +54,7 @@ Número: 8
 Número: 9
 Número: 10
 
-# -------------------- ENTRADA NA TELA --------------------------
+# -------------------- ENTRADA DE TELA --------------------------
 
 ~/Documentos$
 teste-break.sh     
@@ -65,7 +65,7 @@ lrwxrwxrwx 1 deise deise 10 Ago 9 20:44 group -> /etc/group
 -rwxrwxrwx 1 deise deise 407 Set 28 17:48 teste-break.sh
 ~/Documentos$ '''
 
-# --------------------------SCRIPT -------------------------------
+# -------------------------- SCRIPT -------------------------------
 #!/bin/bash
 # Testando comando em um laço while
 read -p "Digite um número entre 1 e 10" num
