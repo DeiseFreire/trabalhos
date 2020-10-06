@@ -1,10 +1,16 @@
+# -------------------------------------------------------------------------------------------------
+# Fonte da ideia: 
+# Shell Scripting - Declaração break - encerrando loops prematuramente
+# https://www.youtube.com/watch?v=sfO3ePx8dWY&list=PLucm8g_ezqNrYgjXC8_CgbvHbvI7dDfhs&index=31&t=0s
+# -------------------------------------------------------------------------------------------------
+
 # --------------------------SCRIPT -------------------------------
 for num in 1 2 3 4 5 6 7 8 9 10 
 do 
 echo "Número: $num"
 done
 
-# -------------------- ENTRADA DE TECLADO ------------------------
+# -------------------- ENTRADA DO TECLADO ------------------------
 '''
 ~/Documentos$ nano break.sh
 ~/Documentos$ chmod 777 break.sh 
@@ -54,7 +60,7 @@ Número: 8
 Número: 9
 Número: 10
 
-# -------------------- ENTRADA DE TECLADO --------------------------
+# -------------------- ENTRADA DO TECLADO --------------------------
 
 ~/Documentos$
 teste-break.sh     
