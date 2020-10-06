@@ -4,7 +4,7 @@ do
 echo "Número: $num"
 done
 
-# -------------------- ENTRADA DE TELA --------------------------
+# -------------------- ENTRADA DE TECLADO ------------------------
 '''
 ~/Documentos$ nano break.sh
 ~/Documentos$ chmod 777 break.sh 
@@ -54,7 +54,7 @@ Número: 8
 Número: 9
 Número: 10
 
-# -------------------- ENTRADA DE TELA --------------------------
+# -------------------- ENTRADA DE TECLADO --------------------------
 
 ~/Documentos$
 teste-break.sh     
