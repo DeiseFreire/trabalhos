@@ -14,4 +14,12 @@ print('''  [1] somar
 [4] novo números 
 [5] sair do programa''')
 opção = int(input('Qual é a sua opção? '))
+if opção ==1:
+elif opção == 2:
+elif opção == 3:
+elif opção == 4:
+elif opção == 5:
+else:
+print('Opção inválida. Tente novamente')
+print('=-='*10)
 print('Fim do programa! Volte sempre!')  
