@@ -24,7 +24,14 @@ pass
 sf.scr.geometry("1366x768")
 sf.scr.title("Pizzaria Sangiorgio: ")
 sf.scr.mainloop()
-x = Pizza
+x = Pizza()
+x.main()
+
+
+
+
+
+
 
 
 
