@@ -46,4 +46,77 @@ public class CalculadoraComObjetos {
         valor3 = result.multiplicacao(valor1, valor2);
         System.out.println("A multiplicação é: " + valor3);
     }
+    public class CalculadoraComObjetos {
+
+
+
+    public static void main(String[] args) {
+
+        double valor1, valor2, valor3;
+
+
+
+        System.out.println("Digite o primeiro número: ");
+
+        Scanner leia = new Scanner(System.in);
+
+
+
+        valor1 = leia.nextDouble();
+
+        System.out.println("Digite o segundo número: ");
+
+
+
+        valor2 = leia.nextDouble();
+
+        Operacao result = new Operacao();
+
+
+
+        valor3 = result.soma(valor1, valor2);
+
+        System.out.println("A soma é : " + valor3);
+
+
+
+        valor3 = result.subtracao(valor1, valor2);
+
+        System.out.println("A subtracao é: " + valor3);
+
+
+
+        valor3 = result.divisao(valor1, valor2);
+
+        System.out.println("A divisão é : " + valor3);
+
+
+
+        valor3 = result.multiplicacao(valor1, valor2);
+
+        System.out.println("A multiplicação é: " + valor3);
+
+    }
+
+}
+
+    public double soma(double valor1, double valor2) {
+
+        double valor3;
+
+        valor3 = valor1 + valor2;
+
+        return valor3;
+
+    }
+
+    public double subtracao(double valor1, double valor2) {
+
+        double valor3;
+
+        valor3 = valor1 - valor2;
+
+        return valor3;
+
+    }
 }
