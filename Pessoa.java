@@ -1,7 +1,7 @@
 /**
  *
  * FONTE DA IDEIA:
- * JAVA: Orientado a objetos classe pessoa. Produção de [s. N.]. [S. L.]: Publicado
+ * JAVA: Orientado a objetos classe pessoa. Produção de [S. n.]. [S. l.]: Publicado
  * Pelo Canal Webforcraft Java, 2013. 1 vídeo (12min.17seg.), color. Youtube.
  */
 import javax.swing.*;
