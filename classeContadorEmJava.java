@@ -11,26 +11,42 @@
 public class ContadorDePessoas {
 
     public static void main(String[] args) {
-        Contador c1 = new Contador(10);
+        limitePessoas c1 = new limitePessoas(40);
 
-        c1.incrementar(3);
-        c1.incrementar(3);
-        c1.incrementar(3);
-        c1.incrementar(3);
-        System.out.println(c1.getValor());
+        c1.registraEntrada(1);
+
+        System.out.println(c1.getRestaurante());
+        System.out.println("O restaurente ultrapassou o limite máximo permitido por pessoa que é de 40 pessoas! ");
 
     }
 }
-public class ContadorDePessoas {
 
-    public static void main(String[] args) {
-        Contador c1 = new Contador(10);
+public class limitePessoas {
 
-        c1.incrementar(3);
-        c1.incrementar(3);
-        c1.incrementar(3);
-        c1.incrementar(3);
-        System.out.println(c1.getValor());
+    private int restaurante;
 
+    public limitePessoas() {
+        restaurante = 0;
+    }
+
+    public limitePessoas(int qtdePresentes) {
+        restaurante = qtdePresentes;
+    }
+
+    public void registraEntrada() {
+        restaurante++;
+    }
+
+    public void registraEntrada(int delta) {
+        restaurante = restaurante + delta;
+    }
+
+    public void registraSaida() {
+        restaurante--;
+
+    }
+
+    int getRestaurante() {
+        return restaurante;
     }
 }
