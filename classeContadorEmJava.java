@@ -16,7 +16,7 @@ public class ContadorDePessoas {
         c1.registraEntrada(1);
 
         System.out.println(c1.getRestaurante());
-        System.out.println("O restaurente ultrapassou o limite máximo permitido por pessoa que é de 40 pessoas! ");
+        System.out.println("O restaurante ultrapassou o limite máximo permitido por pessoa que é de 40 pessoas! ");
 
     }
 }
