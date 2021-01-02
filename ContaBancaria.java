@@ -1,3 +1,8 @@
+/*
+ * Fonte da ideia:
+ * CURSO de Java - Orientação a Objetos: Correção Exercícios Aula 43 - Parte 1 (Conta Bancária). Produção de Loiane Groner. Publicado pelo canal de Loiane Groner. 
+ * [S. l.], 2016. 1 videoaula (31min. 22segs.). Youtube.
+ */
 package com.deisefreire;
 
 public class ContaBancaria {
