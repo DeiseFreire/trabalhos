@@ -45,3 +45,38 @@ public abstract class Contribuinte {
 
     public abstract double calcularImposto();
 }
+public class PessoaFisica extends Contribuinte {
+
+    private String cpf;
+
+    /**
+     * @return the cpf
+     */
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    @Override
+    public double calcularImposto() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+}
+public class PessoaJuridica extends Contribuinte {
+
+    private String cnpj;
+
+    public String getCnpj() {
+        return cnpj;
+    }
+
+    @Override
+    public double calcularImposto() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+}
