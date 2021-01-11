@@ -76,7 +76,8 @@ public class PessoaJuridica extends Contribuinte {
 
     @Override
     public double calcularImposto() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return this.getRendaBruta() * 0.1;
+        //this.getRendaBruta() / 100 * 10; 
     }
 
 }
