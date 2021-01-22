@@ -61,6 +61,12 @@ public class Boletim extends javax.swing.JFrame {
             }
         });
 
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
@@ -133,15 +139,19 @@ public class Boletim extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // CÓDIGO boletim
-        String nome = jTextField1.getText();
-// Pegar a nota do aluno
-        double nota1 = Double.valueOf(jTextField2.getText());
-        double nota2 = Double.valueOf(jTextField3.getText());
-        double nota3 = Double.valueOf(jTextField4.getText());
+        String nome = jTextField4.getText();
+// Pegar a nota do aluno 
+        double nota1 = Double.valueOf(jTextField1.getText());
+        double nota2 = Double.valueOf(jTextField2.getText());
+        double nota3 = Double.valueOf(jTextField3.getText());
         double resultado;
         resultado = (nota1 + nota2 + nota3) / 3;
-        jLabel6.setText(nome + " sua média foi..." + resultado);
+        jLabel6.setText(nome + " sua média foi..." +resultado);
     }                                        
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        // TODO add your handling code here:
+    }                                           
 
     /**
      * @param args the command line arguments
@@ -159,15 +169,11 @@ public class Boletim extends javax.swing.JFrame {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Boletim.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Boletim.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Boletim.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Boletim.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+
         //</editor-fold>
 
         /* Create and display the form */
