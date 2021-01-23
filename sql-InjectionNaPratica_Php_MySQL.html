@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+SQL INJECTION na prática (PHP + MySQL).
+Produção Canal TI. Publicado pelo canal Canal TI. [S. l.], 2017.
+1 videoaula (4 mins. 49 segs.). Youtube.
+-->
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+<head/>
+<body>
+    <?php
+    ini_set("display_errors",1);
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    mysql_connect('127.0.0.1','root','');
+    mysql_select_bd('injection');
+    $usuario = $_POST['usuario'];
+    $senha = $_POST['senha'];
+    $query = "select usuario, senha from usuario where usuario='$usuario' and senha='$senha'";
+    $result =mysql_query($query);
+    $rows = mysql_fetch_array($result);
+    echo "Logado com sucesso";
+    if($rows){
+    echo "Logado com sucesso";
+    }
+    else {
+    echo "Não logou. Tente novamente.";
+    }
+    }
+    ?>
+<html>
+    <head>
+        <title>Demonstrando Injection - Canal TI</title>
+    </head>
+    <body>
+        <form action="index.php" method="POST">
+            <h2>Demonstrando SQL Injection - Canal TI</h2><br>
+            Usuário:<br>
+            <input type="text" name="usuario"><br><br>
+            Senha:<br>
+            <input type="password" name="senha"><br><br>
+            <input type="submit" value="Logar">
+        </form>
+    </body>
+</html>
+</body>
