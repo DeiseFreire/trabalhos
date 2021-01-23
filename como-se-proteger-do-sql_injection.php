@@ -38,7 +38,7 @@ Produção de Thiago Sales. Publicado pelo canal Thiago Sales. [S. l.], 2018.
                     echo "Dados incorretos";
                 }
             } else {
-                echo "Preencher todos os campos!";
+                echo "Preencha todos os campos!";
                 ?>
     </body> 
 </html>
