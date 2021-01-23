@@ -6,6 +6,7 @@ if (mysql_connect_error()) {
 ?>
 <!DOCTYPE html>
 <!--
+Fonte da ideia:
 CURSO de sete minutos: como se proteger do sql injection.
 Produção de Thiago Sales. Publicado pelo canal Thiago Sales. [S. l.], 2018.
 1 videoaula (7 mins. 46 segs.). Youtube.
