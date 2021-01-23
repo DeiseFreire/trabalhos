@@ -1,6 +1,6 @@
 <?php
 $con = new mysql("localhost", "root", "wsbws8g5", "teste");
-if (mysqli_connect_error()) {
+if (mysql_connect_error()) {
     exit("Erro ao conectar-se ao banco de dados." mysql_connect_error())
 }
 ?>
