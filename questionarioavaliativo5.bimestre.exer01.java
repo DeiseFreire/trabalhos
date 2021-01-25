@@ -1,4 +1,14 @@
+/**
+* Questão 1
+* Uma escola lhe pediu para desenvolver um sistema acadêmico. Em relação ao processo avaliativo, 
+* cada bimestre é composto por 3 avaliações que podem ser dos tipos: Prova, Seminário ou Estudo 
+* Dirigido. Em entrevista com o responsável pela escola, ficou definido o diagrama de classes abaixo:
+* Implemente as classes do Diagrama acima. Em seguida, crie a classe BimestreTesteMain e instancie um 
+* bimestre de exemplo composto dos 3 tipos de avaliação existentes e utilize o método imprimirAvaliacoes() 
+* para mostra o resultado.
+*/
 package com.deise.questionarioavaliativo5.bimestre.exer01;
+
 
 /**
  *
