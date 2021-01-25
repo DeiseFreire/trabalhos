@@ -141,9 +141,9 @@ package com.deise.questionarioavaliativo5.bimestre.exer01;
 public class BimestreTesteMain {
     public static void main(String[] args) {
 
-        Prova av1 = new Prova("deise", 10.0, 10.0, 10.0, "Algoritmos");
-        Seminario av2 = new Seminario("deise", 10.0, 10.0, "Matemática Discreta");
-        EstudoDirigido av3 = new EstudoDirigido("freire", 10.0, 10.0, "Algebra Linear");
+        Prova av1 = new Prova("deise", 10.4, 300.0, 14, false);
+        Seminario av2 = new Seminario("deise", 45.9, 400.0, "Matemática Discreta");
+        EstudoDirigido av3 = new EstudoDirigido("Deise", 9.4, 20,  "Algebra Linear");
         Bimestre a = new Bimestre(av1, av2, av3);
         a.imprimirAvaliacoes();
 
