@@ -1,0 +1,146 @@
+>>> Segurança e Auditoria de Sistemas 
+>>> Vespertino 
+>>> 4º SEM - 2020.2
+>>> Avaliações
+>>> AVALIAÇÃO 1º BIMESTRE
+
+Considerando que o site que você desenvolveu tem uma página de cadastro de clientes e você solicitou ao departamento de segurança da Empresa a aquisição e instalação de uma certificado digital para esta área do site, porém isso não foi feito.
+
+No caso deste a ataque se o Cliente tiver como provar que colocou os dados de cadastro apenas no seu site a sua empresa poderá sofre um processo de pedido de indenização por parte do cliente.
+
+A qual ataque seus clientes estão expostos ao fazer o cadastro no seu site?
+Escolha uma opção:
+[X] a. Modificação
+[ ] b. Fabricação
+[ ] c. Interrupção
+[x] d. Intercepção
+
+Questão 2
+Os Protocolos TLS e SSL são implementado na camada de Sessão da arquitetura TCP/IP e são responsáveis pela critografia da chave de sessão gerada pelo navegador com a chave pública do servidor web para acesso https
+Escolha uma opção:
+[x] Verdadeiro 
+[ ] Falso
+
+Questão 3
+A Lista de Certificados Revogados é uma das características da PKI
+Escolha uma opção:
+[x] Verdadeiro
+[ ] Falso 
+
+Questão 4
+O uso de 2 chaves é uma característica da criptografia simétrica
+Escolha uma opção:
+[ ] Verdadeiro
+[x] Falso 
+
+Questão 5
+Em qual camada do modelo OSI é implementada a VPN - Virtual Network Private utiliza
+Escolha uma opção:
+[ ] a. ENLACE
+[x] b. REDE
+[ ] c. TRANSPORTE
+[ ] d. SESSÃO
+
+Questão 6
+No Contexto dos Controles de SIG associe uma coluna com a outra com a opção que corresponde ao controle:
+Determinam se os dados estão completos para execução de uma fórmula a partir do retorno do banco
+Resposta 1
+[Controles de processamento]
+ 
+Resultados iguais em operações diferentes. Corresponde a falha no...
+Resposta 2
+[Controles de saída]
+ 
+Presença de Lixo nos campos do BD preenchidos pelo usuário, corresponde a falha no...
+Resposta 3
+[Controle de entrada]
+ 
+Questão 7
+Quando Mallory envia um e-mail para Bob se passando por Alice podemos afirmar que se trata de um ataque de fabricação
+Escolha uma opção:
+[x] Verdadeiro
+[ ] Falso 
+
+Questão 8
+No contexto da infraestrutura de chave pública a Autoridade Certificadora Emite e Assina certificados digitais
+Escolha uma opção:
+[x] Verdadeiro 
+[ ] Falso
+
+Questão 9
+A confidencialidade é um dos serviços da infra-estrutura de Chave Pública
+Escolha uma opção:
+[x] Verdadeiro 
+[ ] Falso
+
+Questão 10
+Uma das características Básicas da infra-estrutura de Chave Pública é publicar a CRL – Lista de Certificados Revogados
+Escolha uma opção:
+[x] Verdadeiro
+[ ] Falso 
+
+Questão 11
+O Sistema de Detecção de Intrusão pode funcionar com interoperabilidade com o Firewall da Rede para subir regra temporária
+e barrar ataques de negação de serviço contra o servidor Web
+Escolha uma opção:
+[x] Verdadeiro
+[ ] Falso 
+
+Questão 12
+A Autoridade Certificadora Raiz auto assina o seu certificado
+Escolha uma opção:
+[x] Verdadeiro 
+[ ] Falso
+
+Questão 13
+O Firewall funciona como filtro de pacotes não detecta o ataque de SPOOFING de IP
+Escolha uma opção:
+[x] Verdadeiro
+[ ] Falso 
+
+Questão 14
+O SYN FLOOD é um ataque que explora uma funcionalidade do protocolo TCP da camada de transporte do modelo OSI também conhecido como DOS ou DDOS
+Escolha uma opção:
+[x] Verdadeiro
+[ ] Falso 
+Feedback
+
+Questão 15
+A chave de criptografia é um Número aleatório composto de vários algarismos gerado por um algoritmo a partir de um valor inicial
+Escolha uma opção:
+[x] Verdadeiro
+[ ] Falso 
+
+Questão 16
+e-CPF é a Identidade Digital da Pessoa Física no meio eletrônico
+Escolha uma opção:
+[x] Verdadeiro
+[ ] Falso 
+
+Questão 17
+No contexto do SSL - Secure Sockets Layer,  para prover Http seguro (HTTPS), o chave de sessão secreta é criada pelo navegador Web e enviada encriptada com a Chave Pública do Servidor Web, com o qual está estabelecendo a sessão para acesso à área protegida pelo certificado SSL  
+Escolha uma opção:
+[x] Verdadeiro 
+[ ] Falso
+
+Questão 18
+BotNet é uma Rede formada por centenas ou milhares de equipamentos zumbis e que permite potencializar as ações danosas dos bots.
+Escolha uma opção:
+[x] Verdadeiro 
+[ ] Falso
+
+Questão 19
+Um alto funcionário de uma empresa da área de tecnologia viajou à Dubai para fechar um contrato de implementação de segurança da informação nos programas da empresa. Levou impresso todos os documentos necessários à assinatura do contrato, porém na reunião de fechamento houve proposta de alteração de algumas cláusulas do mesmo.
+Sendo assim um novo contrato assinado pelo presidente da empresa que se encontra no Brasil será necessário para a reunião que foi remarcada para o mesmo dia em Dubai no final da tarde, portanto ele possui 3h para conseguir o contrato com as alterações para conseguir fechar o negócio.
+Neste cenário qual opção seria a solução para garantia de confidencialidade, integridade  dos dados e assinatura digital do emissor no Brasil, considerando como meio a Internet
+Escolha uma opção:
+[ ] a. Uso de uma assinatura digital
+[x] b. Uso de certificado digital no cliente de e-mail tanto pelo funcionário quanto pela Empresa no Brasil
+[ ] c. Usaria um Cliente VPN
+[ ] d. Envio do Contrato pela Empresa no Brasil via Webmail 
+
+Questão 20
+Em um criptosistema assimétrico as chaves privadas das respectivas autoridades certificadoras raiz e intermediárias conhecidas são distribuídas no banco de certificados dos navegadores Web 
+Escolha uma opção:
+[ ] Verdadeiro
+[x] Falso 
